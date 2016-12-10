@@ -60,7 +60,7 @@ $("#message1").toggleClass("in");var expires=new Date();expires.setMinutes(expir
 		<div class="logo-transition">
 		 <a class="logo" href="<?php echo (isset($this->_rootref['U_INDEX'])) ? $this->_rootref['U_INDEX'] : ''; ?>" title=""><span><?php echo ((isset($this->_rootref['L_BB'])) ? $this->_rootref['L_BB'] : ((isset($user->lang['BB'])) ? $user->lang['BB'] : '{ BB }')); ?></span><?php echo ((isset($this->_rootref['L_BOOTS'])) ? $this->_rootref['L_BOOTS'] : ((isset($user->lang['BOOTS'])) ? $user->lang['BOOTS'] : '{ BOOTS }')); ?></a>
 		</div>
-		 <p class="site-info"><?php echo (isset($this->_rootref['SITE_DESCRIPTION'])) ? $this->_rootref['SITE_DESCRIPTION'] : ''; ?> <i class="fa fa-umbrella"></i></p>
+		 <p class="site-info"> Ang baho ni Kyle Lee <i class="fa fa-umbrella"></i></p>
 		<div class="clearfix"></div>
 	  </div>  
 	   <?php $this->_tpl_include('navigation.html'); ?>
