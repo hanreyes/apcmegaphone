@@ -1,0 +1,86 @@
+<!-- INCLUDE ucp_header.html -->
+<div class="tab-pane active">
+<h2>{L_TITLE}</h2>
+	
+	<div class="alert alert-info fade in">
+        <button data-dismiss="alert" class="close" type="button" aria-hidden="true"><i class="awe-remove-circle"></i></button>
+       {L_UCP_WELCOME}
+    </div> 
+	
+<!-- IF .topicrow -->
+	<div class="side-segment"><h3>{L_IMPORTANT_NEWS}</h3></div>
+	
+	<div class="panel panel-default">
+	<table class="footable table table-striped table-bordered table-white table-primary table-hover">
+	<thead>
+		<tr>
+			<th data-class="expand"><i class="fa fa-group"></i> {L_TOPICS}</th>
+			<th data-hide="phone"><i class="fa fa-comments"></i> {L_LAST_POST}</th>
+		</tr>
+	</thead>
+	<!-- BEGIN topicrow -->
+		<tbody>
+			<tr>
+				<td>
+				 <i class="row-icon-font icon-moon-podcast2<!-- IF topicrow.S_UNREAD --> text-info<!-- ELSE --> text-muted<!-- ENDIF -->" title="{topicrow.TOPIC_FOLDER_IMG_ALT}"></i>
+				 <i class="row-icon-font-mini <!-- IF topicrow.S_LOCKED -->fa fa-lock forumview-lock<!-- ENDIF -->" title="{topicrow.TOPIC_FOLDER_IMG_ALT}"></i>
+				 <!-- IF topicrow.S_UNREAD --><a href="{topicrow.U_NEWEST_POST}"><i class="fa fa-asterisk"></i></a><!-- ENDIF --><a href="{topicrow.U_VIEW_TOPIC}" class="topictitle"> {topicrow.TOPIC_TITLE}</a><br>
+				 <!-- IF topicrow.PAGINATION --><strong class="pagination"><span>{topicrow.PAGINATION}</span></strong><!-- ENDIF -->
+				 <!-- IF topicrow.ATTACH_ICON_IMG -->{topicrow.ATTACH_ICON_IMG} <!-- ENDIF --><i class="fa fa-user"></i> <small>{L_POST_BY_AUTHOR} {topicrow.TOPIC_AUTHOR_FULL}</small> <i class="fa fa-clock-o"></i> <small>{topicrow.FIRST_POST_TIME}</small>
+				</td>
+				<td class="center"><i class="fa fa-user"></i> {L_POST_BY_AUTHOR} {topicrow.LAST_POST_AUTHOR_FULL}
+				<a rel="tooltip" data-placement="right" data-original-title="{L_FORUMLIST_LASTPOST}" href="{topicrow.U_LAST_POST}"><i class="fa fa-sign-out"></i></a> <br /><i class="fa fa-clock-o"></i> <small>{topicrow.LAST_POST_TIME}</small>
+				</td>
+			</tr>
+		</tbody>
+	<!-- END topicrow -->
+	</table>
+	</div>
+<!-- ENDIF -->
+
+<div class="side-segment"><h3>{L_YOUR_DETAILS}</h3></div>
+   <div class="widget-content"> 
+    <ul class="recent-activity">
+
+        <li class="item"> 
+         <span class="icon red"><i class="icon16 fa fa-flag"></i></span> 
+          <div class="text">{L_JOINED}: </div> 
+         <span class="recent-detail">{JOINED}</span> 
+        </li> 
+	
+	    <li class="item"> <span class="icon yellow"><i class="icon16 fa fa-group"></i></span>
+         <span class="text">{L_VISITED}: </span> 
+         <span class="recent-detail">{LAST_VISIT_YOU}</span> 
+        </li> 
+
+        <!-- IF WARNINGS -->
+        <li class="item"><span class="icon yellow"><i class="icon16 fa fa-bolt"></i></span> 
+         <span class="text">{L_YOUR_WARNINGS}: {WARNING_IMG} [{WARNINGS}]</span> 
+         <span class="recent-detail">{L_DAYS_AGO}</span> 
+        </li>
+		<!-- ENDIF -->
+		
+        <li class="item"> <span class="icon blue"><i class="icon16 fa fa-book"></i></span>
+         <span class="text">{L_TOTAL_POSTS}: <!-- IF POSTS_PCT -->{POSTS}<!-- IF S_DISPLAY_SEARCH --> | <a href="{U_SEARCH_USER}">{L_SEARCH_YOUR_POSTS}</a><!-- ENDIF --> <!-- ELSE -->{POSTS} <!-- ENDIF --> </span> 
+         <span class="recent-detail">({POSTS_DAY} / {POSTS_PCT})</span> 
+        </li> 
+		
+		<!-- IF ACTIVE_FORUM != '' -->
+        <li class="item"> <span class="icon green"><i class="icon16 fa fa-refresh"></i></span>
+         <span class="text">{L_ACTIVE_IN_FORUM}: <a href="{U_ACTIVE_FORUM}">{ACTIVE_FORUM}</a> </span> 
+         <span class="recent-detail">({ACTIVE_FORUM_POSTS} / {ACTIVE_FORUM_PCT})</span> 
+        </li> 
+        <!-- ENDIF -->
+		
+		<!-- IF ACTIVE_TOPIC != '' -->
+        <li class="item last-child"> <span class="icon orange"><i class="icon16 fa fa-comments"></i></span>
+         <span class="text">{L_ACTIVE_IN_TOPIC}: <a href="{U_ACTIVE_TOPIC}">{ACTIVE_TOPIC}</a> </span> 
+         <span class="recent-detail">({ACTIVE_TOPIC_POSTS} / {ACTIVE_TOPIC_PCT})</span> 
+        </li> 
+		<!-- ENDIF -->
+    </ul> 
+   </div>
+	
+</div>
+
+<!-- INCLUDE ucp_footer.html -->

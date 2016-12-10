@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>BBOOTS - a phpBB3 Style</title>
+ 	<meta name="description" content="">
+	<meta name="author" content="ThemeSplat">
+	<meta name="copyright" content="ThemeSplat">
+	<meta name="date" content="2013-11-05T00:00:00+01:00">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/basics.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	<link href="assets/css/shThemeDefault.css" rel="stylesheet">
+	<link href="assets/css/shCore.css" rel="stylesheet">
+    <!-- Let HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script src="assets/js/jquery.min.js"></script> 
+    <script src="assets/js/bootstrap.js"></script> 
+	<script src="assets/js/google-code-prettify/prettify.js"></script> 
+
+	<script src="assets/js/scripts/shCore.js"></script> 
+    <script src="assets/js/scripts/shBrushJScript.js"></script> 
+	<script src="assets/js/scripts/shBrushCss.js"></script>
+	<script src="assets/js/scripts/shBrushPhp.js"></script>
+	
+	
+</head>
+    
+<body>
+
+<!-- Documentation Navbar -->
+
+
+<!-- Main Container Beginning -->					
+<div id="wrap" class="corners container">
+ <div id="content-forum">
+   <div class="padding_0_40">
+    
+	<header class="header">
+	<!-- Logo block -->
+        <div class="topArea"> 
+		 <div class="leftArea">
+		   <div class="logo-transition">
+			<a class="logo" href="#" title=""><span>B</span>BOOTS <span>D</span>OCUMENTATION</a>
+		   </div>
+			<div class="clearfix"></div>
+		 </div>            
+		</div> 
+	<!-- Logo block -->
+	</header>
+      <div id="top-line"></div>
+     
+	<div id="page-body">
+	<p></p>
+	
+	<div class="space10"></div>
+	<div class="space10"></div>
+	
+	<div class="side-segment"><h3>BBOOTS - HTML5/CSS3 Fully Responsive PhpBB3 Theme</h3></div>
+	
+	<ul class="recent-activity">
+	<li>Documentation Rev.6: April 2015</li>
+	<li>Community Support Forum: <a href="http://www.sitesplat.com/phpBB3/">www.sitesplat.com</a></li>
+	<li>MOD's and Tutorials: <a href="http://www.sitesplat.com/phpBB3/">www.sitesplat.com/phpBB3/</a></li>
+	<li>COLORIZE service: <a href="http://www.sitesplat.com/phpBB3/themer.php">www.sitesplat.com/phpBB3/themer.php</a></li>
+	<li>ThemeForest: <a href="http://themeforest.net/user/ThemeSplat">ThemeSplat</a></li>
+	<li>Email: <a href="mailto:info@sitesplat.com">info@sitesplat.com</a></li>
+	<li>Twitter <a href="https://twitter.com/SiteSplat">SiteSplat</a> FOLLOW ME ! ;-)</li>
+	</ul>
+	
+	<div class="space10"></div>
+	<div class="space10"></div>
+	
+	<p>Thank-you for purchasing BBOOTS. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page on Theme Forest or send an email at: info@sitesplat.com</p>
+	
+	<p>I am available for freelance work to customize you favorite phpBB3 mods or to extend BBOOTS according to your needs. Email me for a quote</p>
+	
+	<div class="space10"></div>
+	<p>BBOOTS has a boxed container wrapper with a fluid layout within it. It is the first and the only fully Responsive phpBB3 style that integrates fully the Twitter Bootstrap Framework.
+	   Dozens of reusable components are built in to provide navigation, alerts, popovers, and much more. 
+	
+	 <div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help1">
+        INSTALLATION
+      </a>
+    </div>
+    <div id="help1" class="accordion-body collapse">
+      <div class="accordion-inner">
+      
+	  <div class="side-segment"><h3>BBOOTS ON EXISTING FORUMS</h3></div>
+	  
+	 <p>In order to integrate the Bootstrap framework with phpBB3 there are few core edits that are necessary
+    to be installed. The core edits are in modx format so that you might use <a title="" target="_blank" href="https://www.phpbb.com/mods/automod/" data-original-title="">AutoMod</a> to install it automatically without the need to manually edit each php file.	
+	The core edit file is within this documentation folder. <strong>(SiteSplat_BBCore.zip)</strong></p>
+   <div class="install-section">
+	<strong>How to:</strong>
+	<ol>
+		<li>Log in to your phpBB3 Admin Control Panel(ACP).</li>
+		<li>Click the AutoMod tab in the top navigation bar. (If you have <strong>NOT</strong> yet installed the AutoMOD tool, you will need to download and install it from the phpBB website and install it. <a href="https://www.phpbb.com/customise/db/official_tool/automod/">Download AutoMod</a>.) - If you are new to phpBB, the tutorial at the following link will explain you how to install succesfully AutoMod: <a href="http://www.sitesplat.com/phpBB3/viewtopic.php?f=10&t=874">http://www.sitesplat.com/phpBB3/viewtopic.php?f=10&t=874</a></li>
+		<li>Scroll down to the “Upload MOD” section and upload the <strong>"SiteSplat_BBCore.zip"</strong> file from the documentation folder.<br>
+			<img alt="phpbb upload" src="images/phpbb_upload.png">
+		</li>
+		<li>You may see a message confirming that the plugin has been uploaded. If so, click “Continue to AutoMOD.”</li>
+		<li>Click the “Install” link to complete the installation.<br>
+			<img alt="phpbb upload" src="images/autom-install.bmp">
+		</li>
+	 <li>Upload the "BBOOTS" folder contained in: <strong>MAIN-THEME/Bootstrap3x/001-ElectricBlue/BBOOTS</strong> to your styles folder of your forum root (Where the index.php resides).</li>
+	<li>From the Administration Control Panel (ACP) and within the "STYLES" tab choose BBOOTS (previously uploaded) and install it.</li>
+	<li>Make BBOOTS the default style</li>
+	<li>Done! Enjoy the style ;-)</li>
+      </ol>
+   </div>
+	  
+	  </div>
+    </div>
+  </div>
+  
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help2">
+        FORUM MENU AND MOBILE MENU
+      </a>
+    </div>
+    <div id="help2" class="accordion-body collapse">
+      <div class="accordion-inner">
+	   
+	   <div class="side-segment"><h3>FORUM MAIN MENU</h3></div>
+	   
+	   <p>To change edit/add links for the forum regular and mobile navigation open: BBOOTS/template/navigation.html and edit the links to your liking.</p>
+	
+	 <p>Adding menu sections</p>
+	 <p>With notepad++ right click on the navigation.html and hit edit.</p>
+	 <p>Find:</p>
+	<pre class="prettyprint linenums">&lt;nav class="mainnav"&gt;&lt;!-- Main navigation block --&gt;</pre>
+	
+	 <p>That is the start of the desktop navigation. For a new section add:</p>
+	
+<pre class="prettyprint linenums">
+&lt;li class="nav-icon"&gt;
+&lt;a href="#"&gt;your main title &lt;span class="has-sub"&gt;&lt;i class="icon-home"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;p&gt;your subtitle&lt;/p&gt;
+&lt;/li&gt;
+</pre>
+	
+	<p>To add sub-elements to a new section add:</p>
+	
+<pre class="prettyprint linenums">
+&lt;ul class="submenu"&gt;
+&lt;li&gt;&lt;a href="{U_ELEMENTS}"&gt;&lt;i class="icon-magic"&gt;&lt;/i&gt; {L_BOOTSTRAP_ELEMENT}&lt;/a&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+   <p>Your full code block should look like this:</p>
+<pre class="prettyprint linenums">
+&lt;li class="nav-icon"&gt;
+&lt;a href="{U_INDEX}"&gt;{L_HOME} &lt;span class="has-sub"&gt;&lt;i class="icon-home"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;p&gt;{L_MAIN_MAIN_STUFF}&lt;/p&gt;
+&lt;ul class="submenu"&gt;
+&lt;li&gt;&lt;a href="{U_ELEMENTS}"&gt;&lt;i class="icon-magic"&gt;&lt;/i&gt; {L_BOOTSTRAP_ELEMENT}&lt;/a&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+</pre>
+
+
+      <div class="side-segment"><h3>MOBILE MENU</h3></div>
+
+
+	  <p>For the Mobile navigation look for this line:</p>
+	  
+<pre class="prettyprint linenums">
+&lt;nav class="mainnav-mob"&gt; &lt;!-- MOBILE Navigation block --&gt;
+</pre>  
+	  
+	    <p>Adding elements:</p>
+		
+<pre class="prettyprint linenums">
+&lt;li&gt;&lt;a href=&quot;{U_PROFILE}&quot;&gt;&lt;i class=&quot;icon-dashboard&quot;&gt;&lt;/i&gt; {L_PROFILE}&lt;/a&gt;&lt;/li&gt;
+</pre>  
+	  
+	  
+	  <p>adding a full section with submenu:</p>
+	  
+<pre class="prettyprint linenums">
+&lt;li class=&quot;item-with-ul&quot;&gt;
+&lt;a href=&quot;#4&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt; Submenu Group 1&lt;/a&gt;
+&lt;ul class=&quot;collapse viewdetails&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#5&quot;&gt;SubLink 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#6&quot;&gt;SubLink 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#7&quot;&gt;SubLink 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#8&quot;&gt;SubLink 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a class=&quot;touch-button&quot; href=&quot;javascript:void(0);&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.viewdetails&quot;&gt;&lt;i class=&quot;navicon icon-sort-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+</pre> 
+	
+      </div>
+    </div>
+  </div>
+  
+    <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help3">
+       SOCIAL ICONS
+      </a>
+    </div>
+    <div id="help3" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+		<div class="side-segment"><h3>SOCIAL ICONS AND LINKS</h3></div>
+		
+		<p>To add or remove social icons open the Overall_header.html and look for</p>
+		
+<pre class="prettyprint linenums">
+&lt;section class=&quot;social-top&quot;&gt;
+</pre> 
+		
+	<p>Control your social links with by adding or removing this code:</p>
+
+<pre class="prettyprint linenums">
+&lt;a title="Google+" data-original-title="" href="#1"&gt;&lt;i class="icon-google-plus-sign icon-large google-plus-color"&gt;&lt;/i&gt;&lt;/a&gt;
+</pre> 
+
+   <p>You can change the icons by referring to the elements page included in BBOOTS by replacing the following code within the link:</p>
+
+<pre class="prettyprint linenums">
+icon-google-plus-sign
+</pre>
+		
+      </div>
+    </div>
+  </div>
+  
+  
+    <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help4">
+        FORUM FONTS
+      </a>
+    </div>
+    <div id="help4" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+	   <div class="side-segment"><h3>FORUM FONT</h3></div>
+	   
+	   
+	  <p>You can change the font by adding and removing the through a simple link generated with google free font library</p>
+
+	  <p>Choose your font from here: <a href="http://www.google.com/fonts">Google free font</a> then in the overall_header.html find:</p>
+	  
+<pre class="prettyprint linenums">
+&lt;!-- google free font used for the foum content --&gt;
+</pre>
+	  
+	  <p>then add your font link below that line:</p>
+	  
+<pre class="prettyprint linenums">
+&lt;link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'&gt;
+</pre>
+
+     <p>Now you need to call the font family for the various elements. In this case for the menu font open:
+     Basic.css located in the theme folder and around line: 1916 change the primary font family name, font size etc:</p>
+	 
+	 
+<pre class="prettyprint linenums">
+font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+</pre>
+   
+<p>Your code should look like this:</p>
+	   
+<pre class="prettyprint linenums">
+.mainnav > ul > li > a {
+    color: #8C8C8C;
+    display: block;
+    font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    min-width: 89px;
+    padding: 10px 5px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+</pre>
+	   
+	   
+	   
+      </div>
+    </div>
+  </div>
+  
+  
+  
+      <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help5">
+        FORUM BACKGROUND
+      </a>
+    </div>
+    <div id="help5" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+	   <div class="side-segment"><h3>background image and color</h3></div>
+	   
+	   
+	  <p>For the background image and color open: BBOOTS/theme/basics.css around line 37 and replace the image and color with your own pick :) </p>
+
+	  
+<pre class="prettyprint linenums">
+html {
+  background: #999 url("{T_THEME_PATH}/bootstrap/pattern/forum-backdrop.png");
+}
+</pre>
+	  
+
+	   
+      </div>
+    </div>
+  </div>
+  
+  
+        <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help6">
+        TWITTER
+      </a>
+    </div>
+    <div id="help6" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+	   <div class="side-segment"><h3>TWITTER ID FOR THE FORUM FOOTER</h3></div>
+	   
+	   
+	  <p>In order to get the Twitter feed from your own Twitter page you need to have a widget ID generated from your Twitter account and then add the ID to the forum footer.</p>
+      
+	  <p>This video shows how to generate a twitter ID from the widget tool: a<a href="http://www.youtube.com/watch?v=Ypsib-Nx4VQ">http://www.youtube.com/watch?v=Ypsib-Nx4VQ</a> </p>
+	  
+	  
+	  <p>Now open the overall_footer.html and find this code:</p>
+	  
+<pre class="prettyprint linenums">
+391407906655965184
+</pre>
+	  
+	  
+	  <p>Replace this number: 391407906655965184 with your newly generated twitter ID:</p>
+	  
+<pre class="prettyprint linenums">
+twitterFetcher.fetch('391407906655965184', 'example1', 3, true);
+</pre>
+	  
+	  
+	  
+	   
+      </div>
+    </div>
+  </div>
+  
+  
+     <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help7">
+        SET YOUR OWN LOGO
+      </a>
+    </div>
+    <div id="help7" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+	   <div class="side-segment"><h3>LOGO</h3></div>
+	   
+	   
+	  <p>Open the overall_header.html located in the template folder, with a text editor like: Notepad++ and around line 146 find:</p>
+
+<pre class="prettyprint linenums">
+&lt;a class="logo" href="{U_INDEX}" title=""&gt;&lt;span&gt;B&lt;/span&gt;BOOTS&lt;/a&gt;
+</pre>
+	  
+	   <p>Replace it with:</p>
+<pre class="prettyprint linenums">
+&lt;a class="logo" href="{U_INDEX}" title=""&gt;&lt;img alt="mylogo" src="{T_THEME_PATH}/images/mylogo.png"&gt;&lt;/a&gt;
+</pre>
+	 
+	  <p>Now upload your logo in the theme/images/ folder.</p>
+	  
+	   <p>In order to have it dsiplayed you also need to refresh your theme,forum and browser cache.</p>
+
+	   
+<pre class="prettyprint linenums">
+A) Purge the template and theme :
+
+1) Navigate to "Styles" Tab.
+2) Under "Style components " click on "Templates".
+3) Under "Actions" click on "Refresh" for the BBOOTS style installed.
+4) in the next screen, click on "Yes" to confirm
+5) Repeat the steps for the "Themes" tab right under the "Templates" tab
+
+B) Purge the cache :
+
+1) Navigate to General Tab
+2) look at Purge the cache
+3) Click on "Run Now" button at right
+4) in the next screen, click on "Yes" to confirm
+
+C) Purge the browser cache :
+
+1) Hit F5 on your browser or CTRL+F5
+</pre>
+	 
+	   
+	   
+      </div>
+    </div>
+  </div>
+  
+  
+       <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help8">
+        FOOTER PAGE
+      </a>
+    </div>
+    <div id="help8" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+	   <div class="side-segment"><h3>FAVORITES LINKS</h3></div>
+	   
+	   
+	  <p>You can add/edit the favorite link in the footer page</p>
+	  
+	  <p>Open the overall_footer.html file located in the template folder and find:</p>
+	  
+	  
+<pre class="prettyprint linenums">
+&lt;div class="side-segment"&gt;&lt;h3&gt;Favorites&lt;/h3&gt;&lt;/div&gt;
+</pre>
+	    
+<p>Right below that line you will see all the favorite link. You can change the title and link reference easily from there</p>
+	 
+	 
+	 <div class="side-segment"><h3>ABOUT US TEXT</h3></div>
+	 
+	   <p>Open the overall_footer.html file located in the template folder and find:</p>
+	 
+<pre class="prettyprint linenums">
+&lt;div class="side-segment"&gt;&lt;h3&gt;About us&lt;/h3&gt;&lt;/div&gt;
+</pre>
+
+
+ <p>Wrapped in the "p" tag you can replace the text with your own story ;-)</p>
+ 
+<pre class="prettyprint linenums">
+&lt;p&gt;BBOOTS&amp;#8482; Is The First And Only Fully Responsive PhpBB&amp;reg; Unofficial HTML5/CSS3 Theme. It&rsquo;s Clean And Crisp Design Looks AWESOME Across All Browsers And Devices.&lt;/p&gt; 
+&lt;p&gt;It Utilizes A Bootstrap Based Layout Which Has Been Long Waited For And That Is Sure To AMAZE The phpBB Fan Club.&lt;/p&gt;
+</pre>
+
+	 
+      </div>
+    </div>
+  </div>
+  
+  
+  
+          <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help9">
+        COLORS
+      </a>
+    </div>
+    <div id="help9" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+	   <div class="side-segment"><h3>LIMITLESS COMBINATIONS</h3></div>   
+	   
+	  <p>You can easily swap colors with a click!</p>
+	 
+	 <p>USe the newly COLORIZE service at <a href="http://www.sitesplat.com/phpBB3/themer.php">www.sitesplat.com/phpBB3/themer.php</a> to generate your own color by using a color picker.</p>
+	  
+	   <p>Once you generated your own color, Open the following CSS stylesheet:</p>
+	  
+<pre class="prettyprint linenums">
+BBOOTS/theme/custom.css
+</pre>
+	  
+  <p>After this tags:</p>
+	  
+	  
+<pre class="prettyprint linenums">
+/*****************************************************************
+ * Custom Css Stylesheet. You can add any custom CSS selectors here after the comment line. 
+ * They will be given the highest priority on any elements on the forum
+ * Personilize your forum color scheme in one click here: www.sitesplat.com/phpBB3/ 
+ * **************************************************************
+ *
+ * BBOOTS(3.0.2) @SiteSplat.com - Custom Css - 
+ * 
+ * **************************************************************
+ *****************************************************************/
+</pre> 
+
+<p>Place the css generated and save.</p>
+
+<p>Make sure to purge the theme, forum and browser cache everytime you add a new color.</p>
+<pre class="prettyprint linenums">
+A) Purge the template and theme :
+
+1) Navigate to "Styles" Tab.
+2) Under "Style components " click on "Templates".
+3) Under "Actions" click on "Refresh" for the BBOOTS style installed.
+4) in the next screen, click on "Yes" to confirm
+5) Repeat the steps for the "Themes" tab right under the "Templates" tab
+
+B) Purge the cache :
+
+1) Navigate to General Tab
+2) look at Purge the cache
+3) Click on "Run Now" button at right
+4) in the next screen, click on "Yes" to confirm
+
+C) Purge the browser cache :
+
+1) Hit F5 on your browser or CTRL+F5
+</pre>
+	  
+      </div>
+    </div>
+  </div>
+  
+  
+ <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#help10">
+        NON-ENGLISH LANGUAGE / TRANSLATIONS
+      </a>
+    </div>
+    <div id="help10" class="accordion-body collapse">
+      <div class="accordion-inner">
+       
+	   <div class="side-segment"><h3>LANGUAGES</h3></div>
+	   
+	   
+	  <p>You can add your own language pack to your forum by downloading and installing the official phpBB3 language packs here: <a href="https://www.phpbb.com/languages/">Language Packs</a></p>
+	  
+	  <p>Once the language pack is installed you need to translate the BBOOTS's own language file. This file gets installed automatically with the SiteSplat_BBCore.zip package. </p>
+	  <p> The location is: <strong>language/en/mods/sitesplat.php</strong>. Open sitesplat.php file with <a href="http://notepad-plus-plus.org/">notepad++</a>, translate the content and save. Now you need to add the bboots.php file to your language pack (previosuly installed) directory. For example if you installed French, the location where to copy the sitesplat.php file will be in: <strong>root/language/fr/mods/</strong></p>
+      <p>You can also check out the official support forum at: <a href="https://www.sitesplat.com/phpBB3/">BBOOTS Language Packs</a> and see if there is already a language file translated.
+	 
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  	<div class="space10"></div>
+	<div class="space10"></div>
+  
+  <div class="side-segment"><h3>THANKS!</h3></div>
+   
+   <p>Thanks again for purchasing BBOOTS, If you enjoy the theme please take a few seconds of your time to rate the theme 5 STARS on ThemeForest ;-) <br> The rating system is here: <a href="http://themeforest.net/downloads">http://themeforest.net/downloads</a></p>
+  
+</div>
+	
+   
+    </div>
+   </div>
+ </div>
+</div>
+<!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript">
+$(function()
+{
+$('.post pre, table code').addClass('prettyprint');
+prettyPrint();
+});
+</script>
+<script>
+ //ScrollUp
+$(function () {
+$.scrollUp({
+scrollName: 'scrollUp', // Element ID
+topDistance: '300', // Distance from top before showing element (px)
+topSpeed: 900, // Speed back to top (ms)
+animation: 'slide', // Fade, slide, none
+animationInSpeed: 400, // Animation in speed (ms)
+animationOutSpeed: 400, // Animation out speed (ms)
+scrollText: 'Scroll to top', // Text for element
+activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+});
+}); 
+</script>
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+<script src="assets/js/jquery.scrollUp.js"></script>
+
+</body>
+</html>

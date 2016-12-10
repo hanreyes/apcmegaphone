@@ -1,0 +1,68 @@
+
+<!-- BEGIN forumrow -->
+	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  -->
+		</table>
+		</div>
+	<!-- ENDIF -->
+
+	<!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT  -->
+	<div class="panel panel-default">
+	    <table class="footable table table-striped table-bordered table-white table-primary table-hover">
+			
+		<thead>
+			<tr>
+			 <th data-class="expand"><!-- IF forumrow.S_IS_CAT --><i class="fa fa-list-ol"></i> <a href="{forumrow.U_VIEWFORUM}">{forumrow.FORUM_NAME}</a><!-- ELSE --><i class="fa fa-bullhorn"></i> {L_FORUM}<!-- ENDIF --></th>
+			 <th class="large80" data-hide="phone"><i class="fa fa-bar-chart-o"></i> {L_TOPICS_POSTS_STATISTICS}</th>
+			 <th class="large20" data-hide="phone"><i class="fa fa-comments-o"></i> {L_LAST_POST}</th>
+			</tr>
+		</thead>
+			
+	<tbody>
+	<!-- ENDIF -->
+
+	<!-- IF not forumrow.S_IS_CAT -->
+	    <tr>
+			<td title="{forumrow.FORUM_FOLDER_IMG_ALT}">
+			<!-- IF forumrow.FORUM_IMAGE -->
+			 <span class="forum-image">{forumrow.FORUM_IMAGE}</span>
+			<!-- ELSE -->
+			<i class="row-icon-font icon-moon-default <!-- IF forumrow.S_IS_LINK --> icon-moon-link2<!-- ENDIF --> <!-- IF forumrow.S_UNREAD_FORUM --> text-info<!-- ELSE --> text-muted<!-- ENDIF -->" title="{forumrow.FORUM_FOLDER_IMG_ALT}"></i>
+			<!-- ENDIF -->
+			<i class="row-icon-font-mini <!-- IF forumrow.S_LOCKED_FORUM -->fa fa-lock forum-list-lock<!-- ENDIF -->" title="{forumrow.FORUM_FOLDER_IMG_ALT}"></i>
+			<!-- IF S_ENABLE_FEEDS and forumrow.S_FEED_ENABLED --> <a class="feed-icon-forum hidden-xs hidden-sm" title="{L_FEED} - {forumrow.FORUM_NAME}" href="{U_FEED}?f={forumrow.FORUM_ID}"><i class="fa fa-rss rss-color-forum"></i></a><!-- ENDIF -->
+			 <a href="{forumrow.U_VIEWFORUM}" class="forumtitle">{forumrow.FORUM_NAME}</a><br />
+				<small>{forumrow.FORUM_DESC}</small>
+				<!-- IF forumrow.MODERATORS -->
+				<br /><small><i class="fa fa-user"></i> <strong>{forumrow.L_MODERATOR_STR}:</strong> {forumrow.MODERATORS}</small>
+				<!-- ENDIF -->
+				<!-- IF forumrow.SUBFORUMS and forumrow.S_LIST_SUBFORUMS --><br /><small><i class="fa fa-folder"></i> <strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS}</small><!-- ENDIF -->
+			</td>
+			<!-- IF forumrow.CLICKS -->
+			<td colspan="2">{L_REDIRECTS}: {forumrow.CLICKS}</td>
+					
+			<!-- ELSEIF not forumrow.S_IS_LINK -->
+			<td class="center">
+			 {forumrow.TOPICS} {L_TOPICS} <br />{forumrow.POSTS} {L_POSTS} 
+			 <!-- IF forumrow.U_UNAPPROVED_TOPICS --><a href="{forumrow.U_UNAPPROVED_TOPICS}"><i class="fa fa-question-circle" rel="tooltip" title="{L_FORUMLIST_UNAPPROVED}"></i></a><!-- ENDIF -->
+			 
+			</td>	
+			<td class="center">
+				<!-- IF forumrow.LAST_POST_TIME --><i class="fa fa-user"></i> {L_POST_BY_AUTHOR} {forumrow.LAST_POSTER_FULL}
+				<!-- IF not S_IS_BOT --><a rel="tooltip" data-original-title="{L_FORUMLIST_LASTPOST}" href="{forumrow.U_LAST_POST}"><i class="mobile-post fa fa-sign-out"></i></a><!-- ENDIF -->
+				<br /><i class="fa fa-clock-o"></i><small> {forumrow.LAST_POST_TIME}</small><!-- ELSE -->{L_NO_POSTS}&nbsp;<!-- ENDIF -->
+			</td>
+			<!-- ENDIF -->
+		</tr>
+	<!-- ENDIF -->
+
+	<!-- IF forumrow.S_LAST_ROW -->
+	 </tbody>
+	</table>
+	</div>
+	<!-- ENDIF -->
+
+<!-- BEGINELSE -->
+	<div class="well">
+		<strong>{L_NO_FORUMS}</strong>
+	</div>
+<!-- END forumrow -->

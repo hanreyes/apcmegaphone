@@ -1,0 +1,3138 @@
+<!-- INCLUDE overall_header.html -->
+
+<div class="row-fluid">
+     <div id="side-nav" class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li class="active"><a href="#one"><i class="icon-chevron-right"></i> General</a></li>
+          <li class=""><a href="#two"><i class="icon-chevron-right"></i> Forum Grid System</a></li>
+          <li class=""><a href="#three"><i class="icon-chevron-right"></i> Tables</a></li>
+          <li class=""><a href="#four"><i class="icon-chevron-right"></i> Buttons</a></li>
+          <li class=""><a href="#five"><i class="icon-chevron-right"></i> Navbar</a></li>
+          <li class=""><a href="#six"><i class="icon-chevron-right"></i> Miscellaneous</a></li>
+		  <li class=""><a href="#seven"><i class="icon-chevron-right"></i> Font Icons</a></li>
+        </ul>
+      </div>
+    <div class="span9">
+      <section id="one">
+	       <div class="page-header">
+            <h3>General</h3>
+          </div>
+		 <p>
+		 Dozens of reusable components built to provide navigation, alerts, popovers, and more. Please refer to the full Bootstrap componets documentation available at the following addresses:<br>
+		 <a href="http://getbootstrap.com/2.3.2/components.html" target="_blank"><i class="custom-bootstrap"></i> Bootstrap Components Documentation</a><br>
+		 <a href="http://getbootstrap.com/2.3.2/base-css.html" target="_blank"><i class="custom-bootstrap"></i> Bootstrap CSS Documentation</a><br>
+		 <a href="http://getbootstrap.com/2.3.2/scaffolding.html" target="_blank"><i class="custom-bootstrap"></i> Bootstrap Scaffolding Documentation</a><br>
+		 <a href="http://getbootstrap.com/2.3.2/javascript.html" target="_blank"><i class="custom-bootstrap"></i> Bootstrap JavaScript Documentation</a><br>
+		</p>
+        
+		<p>
+		 Also if you want to know more about the PhpBB base code and its styling I suggest to have a look at the following:<br>
+		 <a href="https://www.phpbb.com/kb/article/phpbb3-styles-files-list" target="_blank"><i class="custom-forphp"></i> PhpBB3 Styles' files list </a><br>
+		 <a href="https://www.phpbb.com/support/documentation/3.0/?from=submenu" target="_blank"><i class="custom-forphp"></i> PhpBB 3.0 Olympus Documentation</a><br>
+		 <a href="https://wiki.phpbb.com/?from=submenu" target="_blank"><i class="custom-forphp"></i> PhpBB Development Wiki</a><br>
+		</p>
+		
+		<p class="lead">Within the download you'll find the following file structure and contents, logically grouping common assets and providing both compiled and minified variations.</p>
+		
+		
+		<pre class="prettyprint"><span class="pln">  bootstrap</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">├──</span><span class="pln"> css</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">.</span><span class="pln">min</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">├──</span><span class="pln"> js</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">.</span><span class="pln">js
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">.</span><span class="pln">min</span><span class="pun">.</span><span class="pln">js
+  </span><span class="pun">└──</span><span class="pln"> img</span><span class="pun">/</span><span class="pln">
+      </span><span class="pun">├──</span><span class="pln"> glyphicons</span><span class="pun">-</span><span class="pln">halflings</span><span class="pun">.</span><span class="pln">png
+      </span><span class="pun">└──</span><span class="pln"> glyphicons</span><span class="pun">-</span><span class="pln">halflings</span><span class="pun">-</span><span class="pln">white</span><span class="pun">.</span><span class="pln">png</span></pre>
+	  
+	  </section>
+	  
+	  
+      <section id="two">
+                         <div class="page-header">
+                              <h3>Forum Grid System</h3>
+                          </div>
+						  
+						  <h2>Live fluid grid example</h2>
+						  
+						  <p>More info about the Bootsrtap Grid system can be found here:
+						  <a href="http://getbootstrap.com/2.3.2/scaffolding.html#global"><i class="custom-bootstrap"></i> Bootsrtap Grid system</a></p>
+						  
+						  <p>The fluid grid system uses percents instead of pixels for column widths. It has the same responsive capabilities as our fixed grid system, ensuring proper proportions for key screen resolutions and devices.</p>
+                   
+                                <!-- /middle navigation standard --><!-- Span 12 -->
+                                <div class="block well">
+                                    <div class="navbar">
+                                        <div class="navbar-inner"><h5>Span12</h5></div>
+                                    </div>
+                                    <div class="body"><code>&lt;div class="span12"&gt;&lt;/div&gt;</code> to force 100% width. By default every block has 100% width.</div>
+                                </div>
+                                <!-- /span 12 --><!-- Span 6 -->
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span6</h5></div></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="span6">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span6</h5></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /span6 --><!-- Span 4 -->
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span4</h5></div></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="span4">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span4</h5></div></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="span4">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span4</h5></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /span 4 --><!-- Span 3 -->
+                                <div class="row-fluid">
+                                    <div class="span3">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span3</h5></div></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="span3">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span3</h5></div></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="span3">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span3</h5></div></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="span3">
+                                        <div class="block well">
+                                            <div class="navbar"><div class="navbar-inner"><h5>Span3</h5></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /span 3 -->
+                                
+								<p>Make any row "fluid" by changing <code>.row</code> to <code>.row-fluid</code>. The column classes stay the exact same, making it easy to flip between fixed and fluid grids.</p>
+								
+								<pre class="prettyprint linenums">
+								<ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span8"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol>
+								</pre>
+								
+								
+      </section>
+	  
+	  
+      <section id="three">
+          <div class="page-header">
+            <h3>Tables</h3>
+          </div>
+
+          <h2>Default styles</h2>
+          <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.</p>
+          <div class="bs-docs-example">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  …</span></li><li class="L2"><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Optional classes</h2>
+          <p>Add any of the following classes to the <code>.table</code> base class.</p>
+
+          <h3><code>.table-striped</code></h3>
+          <p>Adds zebra-striping to any table row within the <code>&lt;tbody&gt;</code> via the <code>:nth-child</code> CSS selector (not available in IE7-8).</p>
+          <div class="bs-docs-example">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre style="margin-bottom: 18px;" class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table table-striped"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  …</span></li><li class="L2"><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+          <h3><code>.table-bordered</code></h3>
+          <p>Add borders and rounded corners to the table.</p>
+          <div class="bs-docs-example">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@TwBootstrap</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table table-bordered"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  …</span></li><li class="L2"><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+          <h3><code>.table-hover</code></h3>
+          <p>Enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+          <div class="bs-docs-example">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre style="margin-bottom: 18px;" class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table table-hover"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  …</span></li><li class="L2"><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+          <h3><code>.table-condensed</code></h3>
+          <p>Makes tables more compact by cutting cell padding in half.</p>
+          <div class="bs-docs-example">
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre style="margin-bottom: 18px;" class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table table-condensed"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  …</span></li><li class="L2"><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Optional row classes</h2>
+          <p>Use contextual classes to color table rows.</p>
+          <table class="table table-bordered table-striped">
+            <colgroup>
+              <col class="span1">
+              <col class="span7">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>.success</code>
+                </td>
+                <td>Indicates a successful or positive action.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>.error</code>
+                </td>
+                <td>Indicates a dangerous or potentially negative action.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>.warning</code>
+                </td>
+                <td>Indicates a warning that might need attention.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>.info</code>
+                </td>
+                <td>Used as an alternative to the default styles.</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="bs-docs-example">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product</th>
+                  <th>Payment Taken</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td>1</td>
+                  <td>TB - Monthly</td>
+                  <td>01/04/2012</td>
+                  <td>Approved</td>
+                </tr>
+                <tr class="error">
+                  <td>2</td>
+                  <td>TB - Monthly</td>
+                  <td>02/04/2012</td>
+                  <td>Declined</td>
+                </tr>
+                <tr class="warning">
+                  <td>3</td>
+                  <td>TB - Monthly</td>
+                  <td>03/04/2012</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="info">
+                  <td>4</td>
+                  <td>TB - Monthly</td>
+                  <td>04/04/2012</td>
+                  <td>Call in to confirm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">...</span></li><li class="L1"><span class="pln">  </span><span class="pun">&lt;</span><span class="pln">tr </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"success"</span><span class="pun">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="str">&lt;td&gt;</span><span class="lit">1</span><span class="pun">&lt;</span><span class="str">/td&gt;</span></li><li class="L3"><span class="str">    &lt;td&gt;TB - Monthly&lt;/</span><span class="pln">td</span><span class="pun">&gt;</span></li><li class="L4"><span class="pln">    </span><span class="str">&lt;td&gt;</span><span class="lit">01</span><span class="pun">/</span><span class="lit">04</span><span class="pun">/</span><span class="lit">2012</span><span class="pun">&lt;</span><span class="str">/td&gt;</span></li><li class="L5"><span class="str">    &lt;td&gt;Approved&lt;/</span><span class="pln">td</span><span class="pun">&gt;</span></li><li class="L6"><span class="pln">  </span><span class="pun">&lt;/</span><span class="pln">tr</span><span class="pun">&gt;</span></li><li class="L7"><span class="pun">...</span></li></ol></pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Supported table markup</h2>
+          <p>List of supported table HTML elements and how they should be used.</p>
+          <table class="table table-bordered table-striped">
+            <colgroup>
+              <col class="span1">
+              <col class="span7">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>&lt;table&gt;</code>
+                </td>
+                <td>
+                  Wrapping element for displaying data in a tabular format
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;thead&gt;</code>
+                </td>
+                <td>
+                  Container element for table header rows (<code>&lt;tr&gt;</code>) to label table columns
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;tbody&gt;</code>
+                </td>
+                <td>
+                  Container element for table rows (<code>&lt;tr&gt;</code>) in the body of the table
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;tr&gt;</code>
+                </td>
+                <td>
+                  Container element for a set of table cells (<code>&lt;td&gt;</code> or <code>&lt;th&gt;</code>) that appears on a single row
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;td&gt;</code>
+                </td>
+                <td>
+                  Default table cell
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;th&gt;</code>
+                </td>
+                <td>
+                  Special table cell for column (or row, depending on scope and placement) labels
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;caption&gt;</code>
+                </td>
+                <td>
+                  Description or summary of what the table holds, especially useful for screen readers
+                </td>
+              </tr>
+            </tbody>
+          </table>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;table&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;caption&gt;</span><span class="pln">...</span><span class="tag">&lt;/caption&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;thead&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;tr&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;th&gt;</span><span class="pln">...</span><span class="tag">&lt;/th&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;th&gt;</span><span class="pln">...</span><span class="tag">&lt;/th&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/tr&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/thead&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;tbody&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;tr&gt;</span></li><li class="L0"><span class="pln">      </span><span class="tag">&lt;td&gt;</span><span class="pln">...</span><span class="tag">&lt;/td&gt;</span></li><li class="L1"><span class="pln">      </span><span class="tag">&lt;td&gt;</span><span class="pln">...</span><span class="tag">&lt;/td&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/tr&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/tbody&gt;</span></li><li class="L4"><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+        </section>
+		
+      <section id="four">
+          <div class="page-header">
+            <h3>Buttons</h3>
+          </div>
+
+          <h2>Default buttons</h2>
+          <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button class="btn" type="button">Default</button></td>
+                <td><code>btn</code></td>
+                <td>Standard gray button with gradient</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-primary" type="button">Primary</button></td>
+                <td><code>btn btn-primary</code></td>
+                <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-info" type="button">Info</button></td>
+                <td><code>btn btn-info</code></td>
+                <td>Used as an alternative to the default styles</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-success" type="button">Success</button></td>
+                <td><code>btn btn-success</code></td>
+                <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-warning" type="button">Warning</button></td>
+                <td><code>btn btn-warning</code></td>
+                <td>Indicates caution should be taken with this action</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-danger" type="button">Danger</button></td>
+                <td><code>btn btn-danger</code></td>
+                <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-inverse" type="button">Inverse</button></td>
+                <td><code>btn btn-inverse</code></td>
+                <td>Alternate dark gray button, not tied to a semantic action or use</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-link" type="button">Link</button></td>
+                <td><code>btn btn-link</code></td>
+                <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Cross browser compatibility</h4>
+          <p>IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.</p>
+
+
+          <h2>Button sizes</h2>
+          <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
+          <div class="bs-docs-example">
+            <p>
+              <button class="btn btn-large btn-primary" type="button">Large button</button>
+              <button class="btn btn-large" type="button">Large button</button>
+            </p>
+            <p>
+              <button class="btn btn-primary" type="button">Default button</button>
+              <button class="btn" type="button">Default button</button>
+            </p>
+            <p>
+              <button class="btn btn-small btn-primary" type="button">Small button</button>
+              <button class="btn btn-small" type="button">Small button</button>
+            </p>
+            <p>
+              <button class="btn btn-mini btn-primary" type="button">Mini button</button>
+              <button class="btn btn-mini" type="button">Mini button</button>
+            </p>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;p&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-large btn-primary"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Large button</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-large"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Large button</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="tag">&lt;/p&gt;</span></li><li class="L4"><span class="tag">&lt;p&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-primary"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Default button</span><span class="tag">&lt;/button&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Default button</span><span class="tag">&lt;/button&gt;</span></li><li class="L7"><span class="tag">&lt;/p&gt;</span></li><li class="L8"><span class="tag">&lt;p&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-small btn-primary"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Small button</span><span class="tag">&lt;/button&gt;</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-small"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Small button</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="tag">&lt;p&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-mini btn-primary"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Mini button</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-mini"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Mini button</span><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+          <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
+          <div class="bs-docs-example">
+            <div style="max-width: 400px; margin: 0 auto 10px;" class="well">
+              <button class="btn btn-large btn-block btn-primary" type="button">Block level button</button>
+              <button class="btn btn-large btn-block" type="button">Block level button</button>
+            </div>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-large btn-block btn-primary"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Block level button</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-large btn-block"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Block level button</span><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+
+
+          <h2>Disabled state</h2>
+          <p>Make buttons look unclickable by fading them back 50%.</p>
+
+          <h3>Anchor element</h3>
+          <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
+          <p class="bs-docs-example">
+            <a class="btn btn-large btn-primary disabled" href="#">Primary link</a>
+            <a class="btn btn-large disabled" href="#">Link</a>
+          </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-large btn-primary disabled"</span><span class="tag">&gt;</span><span class="pln">Primary link</span><span class="tag">&lt;/a&gt;</span></li><li class="L1"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-large disabled"</span><span class="tag">&gt;</span><span class="pln">Link</span><span class="tag">&lt;/a&gt;</span></li></ol></pre>
+          <p>
+            <span class="label label-info">Heads up!</span>
+            We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
+          </p>
+
+          <h3>Button element</h3>
+          <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+          <p class="bs-docs-example">
+            <button disabled="disabled" class="btn btn-large btn-primary disabled" type="button">Primary button</button>
+            <button disabled="" class="btn btn-large" type="button">Button</button>
+          </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-large btn-primary disabled"</span><span class="pln"> </span><span class="atn">disabled</span><span class="pun">=</span><span class="atv">"disabled"</span><span class="tag">&gt;</span><span class="pln">Primary button</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-large"</span><span class="pln"> </span><span class="atn">disabled</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+
+
+          <h2>One class, multiple tags</h2>
+          <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+          <form class="bs-docs-example">
+            <a href="" class="btn">Link</a>
+            <button type="submit" class="btn">Button</button>
+            <input type="button" value="Input" class="btn">
+            <input type="submit" value="Submit" class="btn">
+          </form>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Link</span><span class="tag">&lt;/a&gt;</span></li><li class="L1"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Input"</span><span class="tag">&gt;</span></li><li class="L3"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Submit"</span><span class="tag">&gt;</span></li></ol></pre>
+          <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
+
+		  
+		  <h2>Button State</h2>
+          <p>Use the <code>data-loading-text="loading..."</code> attribute to create a loading state button.</p>
+          <div class="bs-docs-example">
+            <button id="fat-btn" data-loading-text="loading..." class="btn">Loading State</button>
+			<button data-loading-text="Loading..." class="btn btn-primary" type="button">Loading state</button>
+			<button data-loading-text="Loading..." type="submit" name="button" class="btn btn-primary"><i class="icon-check icon-white"></i>Save changes</button>
+            <button data-loading-text="Loading..." type="submit" name="button" class="btn"><i class="icon-check icon-white"></i>Save changes</button>
+		 </div>
+		  
+		  
+		  <h2>Single button group</h2>
+		  <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+		  
+		  <div class="bs-docs-example">
+            <div style="margin: 9px 0 5px;" class="btn-group">
+              <button class="btn">Left</button>
+              <button class="btn">Middle</button>
+              <button class="btn">Right</button>
+            </div>
+          </div>
+		  
+		  <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn-group"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Left</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Middle</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Right</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+		  
+		  <h2>Vertical button groups</h2>
+		  
+		  <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
+		  
+		  <div class="bs-docs-example">
+            <div class="btn-group btn-group-vertical">
+              <button class="btn" type="button"><i class="icon-align-left"></i></button>
+              <button class="btn" type="button"><i class="icon-align-center"></i></button>
+              <button class="btn" type="button"><i class="icon-align-right"></i></button>
+              <button class="btn" type="button"><i class="icon-align-justify"></i></button>
+            </div>
+          </div>
+		  
+		  <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn-group btn-group-vertical"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ...</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+        </section>
+	  
+      <section id="five">
+          <div class="page-header">
+            <h1>Labels and badges</h1>
+          </div>
+          <h3>Labels</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Labels</th>
+                <th>Markup</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="label">Default</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label"&gt;Default&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-success">Success</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-success"&gt;Success&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-warning">Warning</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-important">Important</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-important"&gt;Important&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-info">Info</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="label label-inverse">Inverse</span>
+                </td>
+                <td>
+                  <code>&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Badges</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Example</th>
+                <th>Markup</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Default
+                </td>
+                <td>
+                  <span class="badge">1</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge"&gt;1&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Success
+                </td>
+                <td>
+                  <span class="badge badge-success">2</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-success"&gt;2&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Warning
+                </td>
+                <td>
+                  <span class="badge badge-warning">4</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-warning"&gt;4&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Important
+                </td>
+                <td>
+                  <span class="badge badge-important">6</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-important"&gt;6&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Info
+                </td>
+                <td>
+                  <span class="badge badge-info">8</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-info"&gt;8&lt;/span&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Inverse
+                </td>
+                <td>
+                  <span class="badge badge-inverse">10</span>
+                </td>
+                <td>
+                  <code>&lt;span class="badge badge-inverse"&gt;10&lt;/span&gt;</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Easily collapsible</h3>
+          <p>For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.</p>
+
+        </section>
+	  
+	  <section id="six">
+          <div class="page-header">
+            <h3>Miscellaneous <small>Lightweight utility components</small></h3>
+          </div>
+
+          <h2>Wells</h2>
+          <p>Use the well as a simple effect on an element to give it an inset effect.</p>
+          <div class="bs-docs-example">
+            <div class="well">
+              Look, I'm in a well!
+            </div>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"well"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ...</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+          <h3>Optional classes</h3>
+          <p>Control padding and rounded corners with two optional modifier classes.</p>
+          <div class="bs-docs-example">
+            <div class="well well-large">
+              Look, I'm in a well!
+            </div>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"well well-large"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ...</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+          <div class="bs-docs-example">
+            <div class="well well-small">
+              Look, I'm in a well!
+            </div>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"well well-small"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ...</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+
+          <h2>Helper classes</h2>
+          <p>Simple, focused classes for small display or behavior tweaks.</p>
+
+          <h4>.pull-left</h4>
+          <p>Float an element left</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="kwd">class</span><span class="pun">=</span><span class="str">"pull-left"</span></li></ol></pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">.</span><span class="pln">pull</span><span class="pun">-</span><span class="pln">left </span><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span></li><li class="L2"><span class="pun">}</span></li></ol></pre>
+
+          <h4>.pull-right</h4>
+          <p>Float an element right</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="kwd">class</span><span class="pun">=</span><span class="str">"pull-right"</span></li></ol></pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">.</span><span class="pln">pull</span><span class="pun">-</span><span class="pln">right </span><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> right</span><span class="pun">;</span></li><li class="L2"><span class="pun">}</span></li></ol></pre>
+
+          <h4>.muted</h4>
+          <p>Change an element's color to <code>#999</code></p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="kwd">class</span><span class="pun">=</span><span class="str">"muted"</span></li></ol></pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">.</span><span class="pln">muted </span><span class="pun">{</span></li><li class="L1"><span class="pln">  color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#999;</span></li><li class="L2"><span class="pun">}</span></li></ol></pre>
+
+          <h4>.clearfix</h4>
+          <p>Clear the <code>float</code> on any element</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="kwd">class</span><span class="pun">=</span><span class="str">"clearfix"</span></li></ol></pre>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">.</span><span class="pln">clearfix </span><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="pun">*</span><span class="pln">zoom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L2"><span class="pln">  </span><span class="pun">&amp;:</span><span class="pln">before</span><span class="pun">,</span></li><li class="L3"><span class="pln">  </span><span class="pun">&amp;:</span><span class="pln">after </span><span class="pun">{</span></li><li class="L4"><span class="pln">    display</span><span class="pun">:</span><span class="pln"> table</span><span class="pun">;</span></li><li class="L5"><span class="pln">    content</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">;</span></li><li class="L6"><span class="pln">  </span><span class="pun">}</span></li><li class="L7"><span class="pln">  </span><span class="pun">&amp;:</span><span class="pln">after </span><span class="pun">{</span></li><li class="L8"><span class="pln">    clear</span><span class="pun">:</span><span class="pln"> both</span><span class="pun">;</span></li><li class="L9"><span class="pln">  </span><span class="pun">}</span></li><li class="L0"><span class="pun">}</span></li></ol></pre>
+
+
+       <h2>Standard pagination</h2>
+
+         <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+
+		 <div class="bs-docs-example">
+            <div class="pagination">
+              <ul>
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </div>
+		  
+		  
+		  <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pagination"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Prev</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">3</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">4</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">5</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Next</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;/ul&gt;</span></li><li class="L0"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+		  
+		  <p>Fancy larger or smaller pagination? Add <code>.pagination-large</code>, <code>.pagination-small</code>, or <code>.pagination-mini</code> for additional sizes.</p>
+		  
+		 <div class="bs-docs-example">
+            <div class="pagination pagination-large">
+              <ul>
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </div>
+		  
+		  <div class="bs-docs-example">
+            <div class="pagination pagination-mini">
+              <ul>
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </div>
+		  
+       <h2>Alignment</h2>
+		  
+		  <p>Add one of two optional classes to change the alignment of pagination links: <code>.pagination-centered</code> and <code>.pagination-right</code>.</p>
+		  
+		  
+		  <div class="bs-docs-example">
+            <div class="pagination pagination-centered">
+              <ul>
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+             </ul>
+            </div>
+          </div>
+		  
+		  <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pagination pagination-centered"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ...</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+		  
+		  
+		  
+		 <h2>Styled CSS3 Checkboxes and Radio Buttons</h2>
+		  
+		<div class="bs-docs-example">
+      <p>
+        <input type="checkbox" name="cc" id="c1">
+        <label for="c1">Checkbox 1</label>
+      </p>
+      <p>
+        <input type="checkbox" name="cc" id="c2">
+        <label for="c2">Checkbox 2</label>
+      </p>
+      <p>
+        <input type="radio" name="rb" id="r1">
+        <label for="r1">Radio Button 1</label>
+      </p>
+      <p>
+        <input type="radio" name="rb" id="r2">
+        <label for="r2">Radio Button 2</label>
+      </p>
+	  
+	<p>
+        <input type="radio" value="1" id="viewemail1" name="viewemail">
+        <label for="viewemail1">Yes</label>
+      
+        <input type="radio" checked="checked" value="0" id="viewemail0" name="viewemail">
+        <label for="viewemail0">No</label>
+      </p>
+	  
+	  
+	  <label class="control-label">CheckBox Toggle Buttons</label>
+	    <div class="controls">
+            <div class="btn-group" data-toggle="buttons-checkbox">
+             <button type="button" class="btn"><i class="icon-bold"></i></button>
+             <button type="button" class="btn"><i class="icon-italic"></i></button>
+             <button type="button" class="btn"><i class="icon-strikethrough"></i></button>
+            </div>
+        </div>
+			
+       
+			
+		<div class="control-group">
+            <label class="control-label">Radio Toggle Buttons</label>
+        <div class="controls">
+            <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn"><i class="icon-lock"></i></button>
+                <button type="button" class="btn active"><i class="icon-unlock"></i></button>
+            </div>
+        </div>
+        </div>
+	  
+	    </div>
+	  
+	 
+	<h2>ToolTips, PopHovers</h2>
+	
+	<div class="bs-docs-example">
+           
+		   
+	<div class="alert alert-info">
+        <i class="icon-info-sign"></i> You can activate HTML content inside the Tooltip and PopHover by adding the following attribute: <code>data-html="true"</code>
+   </div>	   
+		   
+    <p> Tootip Example <i class="icon-question-sign muted inline" rel="tooltip" data-placement="right" data-original-title="With this alpha release, the new extension system will be put through its paces. We wish phpBB 3.1 to offer a rich and smooth extension environment for developers, right from the start. MOD authors are asked to convert their MODs into 3.1 extensions and thereby assist us with identifying and reporting any shortcomings, no matter how small."></i></p>
+	
+    	
+	
+	
+	 <div class="da-panel-content" style="text-align: center">
+        <button data-original-title="This is a tooltip" type="button" rel="tooltip" data-placement="top" class="btn">Top</button>
+	    <button data-original-title="This is a tooltip" type="button" rel="tooltip" data-placement="left" class="btn">Left</button>
+    	<button data-original-title="This is a tooltip" type="button" rel="tooltip" data-placement="bottom" class="btn">Bottom</button>
+	    <button data-original-title="This is a tooltip" type="button" rel="tooltip" data-placement="right" class="btn">Right</button>
+    </div>
+					
+      <div class="space10"></div>
+					
+		 <div class="da-panel-content" style="text-align: center">
+               <div class="btn" rel="popover" data-trigger="hover" data-placement="top" data-content="Euphoria (semantically opposite of dysphoria) is medically recognized as a mental and emotional condition in which a person experiences intense feelings of well-being, elation, happiness, ecstasy, excitement, and joy." data-original-title="Euphoria">Top</div>
+               <div class="btn" rel="popover" data-trigger="hover" data-placement="left" data-content="Asthma is the common chronic inflammatory disease of the airways characterized by variable and recurring symptoms, reversible airflow obstruction, and bronchospasm." data-original-title="Asthma">Left</div>
+               <div class="btn" rel="popover" data-trigger="hover" data-placement="right" data-content="A wing is an appendage with a surface that produces lift for flight or propulsion through the atmosphere, or through another gaseous or liquid fluid. A wing is an airfoil, which has a streamlined cross-sectional shape producing a useful lift to drag ratio." data-original-title="Wing">Right</div>
+               <div class="btn" rel="popover" data-trigger="hover" data-placement="bottom" data-content="Silicones are inert, synthetic compounds with a variety of forms and uses. Typically heat-resistant and rubber-like, they are used in sealants, adhesives, lubricants, medical applications (e.g., breast implants), cookware, and insulation." data-original-title="Sillicone">Bottom</div>
+     </div>						
+					
+	
+	</div>
+	
+
+	<h2>Modals</h2>
+	
+	<p>A rendered modal with header, body, and set of actions in the footer.</p>
+	
+	<div style="background-color: #f5f5f5;" class="bs-docs-example">
+            <div style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;" class="modal">
+              <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h3>Modal header</h3>
+              </div>
+              <div class="modal-body">
+                <p>One fine body…</p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn" href="#">Close</a>
+                <a class="btn" href="#">Save changes</a>
+              </div>
+            </div>
+          </div>
+	
+	<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal hide fade"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-header"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span><span class="pln">&amp;times;</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;h3&gt;</span><span class="pln">Modal header</span><span class="tag">&lt;/h3&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-body"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;p&gt;</span><span class="pln">One fine body…</span><span class="tag">&lt;/p&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-footer"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Close</span><span class="tag">&lt;/a&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Save changes</span><span class="tag">&lt;/a&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+	
+	<div style="padding-bottom: 24px;" class="bs-docs-example">
+            <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">Modal header</h3>
+</div>
+<div class="modal-body">
+<p>One fine body…</p>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+<button class="btn">Save changes</button>
+</div>
+</div>
+          </div>
+		  
+	<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com">&lt;!-- Button to trigger modal --&gt;</span></li><li class="L1"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#myModal"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"modal"</span><span class="tag">&gt;</span><span class="pln">Launch demo modal</span><span class="tag">&lt;/a&gt;</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com">&lt;!-- Modal --&gt;</span></li><li class="L4"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myModal"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal hide fade"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"dialog"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"myModalLabel"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-header"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span><span class="pln">×</span><span class="tag">&lt;/button&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;h3</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myModalLabel"</span><span class="tag">&gt;</span><span class="pln">Modal header</span><span class="tag">&lt;/h3&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-body"</span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;p&gt;</span><span class="pln">One fine body…</span><span class="tag">&lt;/p&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-footer"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span><span class="pln">Close</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Save changes</span><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+	
+	
+	<p>If a remote url is provided, content will be loaded via jQuery's <code>load</code> method and injected into the <code>.modal-body</code>. If you're using the data api, you may alternatively use the <code>href</code> tag to specify the remote source. An example of this is shown below:</p>
+	
+	<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">data-toggle</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"remote.html"</span><span class="pln"> </span><span class="atn">data-target</span><span class="pun">=</span><span class="atv">"#modal"</span><span class="tag">&gt;</span><span class="pln">click me</span><span class="tag">&lt;/a&gt;</span></code></li></ol></pre>
+
+	
+	
+	<h2>Alerts</h2>
+	
+	
+	<p>Add dismiss functionality to all alert messages with this plugin.</p>
+	
+	<div class="bs-docs-example">
+          <div class="alert fade in">
+            <button data-dismiss="alert" class="close" type="button">×</button>
+            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+          </div>
+		  
+		<div class="alert fade in">
+			<button class="close" data-dismiss="alert"><span class="awe-remove-circle"></span></button>
+			<strong>Default alert box!</strong> This is default style. Nothing special to see.
+		</div>
+								
+		<div class="alert alert-info fade in">
+			<button class="close" data-dismiss="alert"><span class="awe-remove-circle"></span></button>
+			<strong>Info alert box!</strong> Also a blue one for tips and info highlights.
+		</div>
+								
+		<div class="alert alert-warning fade in">
+			<button class="close" data-dismiss="alert"><span class="awe-remove-circle"></span></button>
+			<strong>Warning alert box!</strong> Best check yo self, you're not looking too good.
+	    </div>					
+		  
+		<div class="alert alert-error fade in">
+			<button class="close" data-dismiss="alert"><span class="awe-remove-circle"></span></button>
+			<strong>Error alert box!</strong> Nice red alert when something goes wrong.
+		</div>
+		
+		
+		<div class="alert alert-success fade in">
+			<button class="close" data-dismiss="alert"><span class="awe-remove-circle"></span></button>
+			<h4 class="alert-heading">Warning!</h4>
+			Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+		</div>
+		  
+		<div class="alert alert-block alert-warning fade in">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h4 class="alert-heading">Oh snap! You got an error!</h4>
+            <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p>
+              <a class="btn btn-danger" href="#" data-original-title="" title="">Take this action</a> <a class="btn btn-primary" href="#" data-original-title="" title="">Or do this</a>
+            </p>
+        </div>  
+		  
+        </div>
+	
+	    <h2>Close icon</h2>
+	
+	    <p>Use the generic close icon for dismissing content like modals and alerts.</p>
+		
+		<div class="bs-docs-example">
+            <p><button style="float: none;" class="close">×</button></p>
+          </div>
+		  
+		<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="tag">&gt;</span><span class="pln">&amp;times;</span><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+	
+	   <p>iOS devices require an <code>href="#"</code> for click events if you would rather use an anchor.</p>
+	   
+	   
+	   <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">&amp;times;</span><span class="tag">&lt;/a&gt;</span></li></ol></pre>
+	
+        </section>
+		
+		
+		<section id="seven">
+          <div class="page-header">
+            <h3>Font Icons</h3>
+          </div>
+		  
+		<div class="icon-style-list">
+			<div class="row-fluid">
+			<h3>Web Application Icons</h3>
+			</div>
+			<div class="row-fluid">
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-adjust"></i> icon-adjust</li>
+			<li><i class="icon-asterisk"></i> icon-asterisk</li>
+			<li><i class="icon-ban-circle"></i> icon-ban-circle</li>
+			<li><i class="icon-bar-chart"></i> icon-bar-chart</li>
+			<li><i class="icon-barcode"></i> icon-barcode</li>
+			<li><i class="icon-beaker"></i> icon-beaker</li>
+			<li><i class="icon-bell"></i> icon-bell</li>
+			<li><i class="icon-bolt"></i> icon-bolt</li>
+			<li><i class="icon-book"></i> icon-book</li>
+			<li><i class="icon-bookmark"></i> icon-bookmark</li>
+			<li><i class="icon-bookmark-empty"></i> icon-bookmark-empty</li>
+			<li><i class="icon-briefcase"></i> icon-briefcase</li>
+			<li><i class="icon-bullhorn"></i> icon-bullhorn</li>
+			<li><i class="icon-calendar"></i> icon-calendar</li>
+			<li><i class="icon-camera"></i> icon-camera</li>
+			<li><i class="icon-camera-retro"></i> icon-camera-retro</li>
+			<li><i class="icon-certificate"></i> icon-certificate</li>
+			<li><i class="icon-check"></i> icon-check</li>
+			<li><i class="icon-check-empty"></i> icon-check-empty</li>
+			<li><i class="icon-cloud"></i> icon-cloud</li>
+			<li><i class="icon-cog"></i> icon-cog</li>
+			<li><i class="icon-cogs"></i> icon-cogs</li>
+			<li><i class="icon-comment"></i> icon-comment</li>
+			<li><i class="icon-comment-alt"></i> icon-comment-alt</li>
+			<li><i class="icon-comments"></i> icon-comments</li>
+			<li><i class="icon-comments-alt"></i> icon-comments-alt</li>
+			<li><i class="icon-credit-card"></i> icon-credit-card</li>
+			<li><i class="icon-dashboard"></i> icon-dashboard</li>
+			<li><i class="icon-download"></i> icon-download</li>
+			<li><i class="icon-download-alt"></i> icon-download-alt</li>
+			<li><i class="icon-edit"></i> icon-edit</li>
+			<li><i class="icon-envelope"></i> icon-envelope</li>
+			<li><i class="icon-envelope-alt"></i> icon-envelope-alt</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-exclamation-sign"></i> icon-exclamation-sign</li>
+			<li><i class="icon-external-link"></i> icon-external-link</li>
+			<li><i class="icon-eye-close"></i> icon-eye-close</li>
+			<li><i class="icon-eye-open"></i> icon-eye-open</li>
+			<li><i class="icon-facetime-video"></i> icon-facetime-video</li>
+			<li><i class="icon-film"></i> icon-film</li>
+			<li><i class="icon-filter"></i> icon-filter</li>
+			<li><i class="icon-fire"></i> icon-fire</li>
+			<li><i class="icon-flag"></i> icon-flag</li>
+			<li><i class="icon-folder-close"></i> icon-folder-close</li>
+			<li><i class="icon-folder-open"></i> icon-folder-open</li>
+			<li><i class="icon-gift"></i> icon-gift</li>
+			<li><i class="icon-glass"></i> icon-glass</li>
+			<li><i class="icon-globe"></i> icon-globe</li>
+			<li><i class="icon-group"></i> icon-group</li>
+			<li><i class="icon-hdd"></i> icon-hdd</li>
+			<li><i class="icon-headphones"></i> icon-headphones</li>
+			<li><i class="icon-heart"></i> icon-heart</li>
+			<li><i class="icon-heart-empty"></i> icon-heart-empty</li>
+			<li><i class="icon-home"></i> icon-home</li>
+			<li><i class="icon-inbox"></i> icon-inbox</li>
+			<li><i class="icon-info-sign"></i> icon-info-sign</li>
+			<li><i class="icon-key"></i> icon-key</li>
+			<li><i class="icon-leaf"></i> icon-leaf</li>
+			<li><i class="icon-legal"></i> icon-legal</li>
+			<li><i class="icon-lemon"></i> icon-lemon</li>
+			<li><i class="icon-lock"></i> icon-lock</li>
+			<li><i class="icon-unlock"></i> icon-unlock</li>
+			<li><i class="icon-magic"></i> icon-magic</li>
+			<li><i class="icon-magnet"></i> icon-magnet</li>
+			<li><i class="icon-map-marker"></i> icon-map-marker</li>
+			<li><i class="icon-minus"></i> icon-minus</li>
+			<li><i class="icon-minus-sign"></i> icon-minus-sign</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-money"></i> icon-money</li>
+			<li><i class="icon-move"></i> icon-move</li>
+			<li><i class="icon-music"></i> icon-music</li>
+			<li><i class="icon-off"></i> icon-off</li>
+			<li><i class="icon-ok"></i> icon-ok</li>
+			<li><i class="icon-ok-circle"></i> icon-ok-circle</li>
+			<li><i class="icon-ok-sign"></i> icon-ok-sign</li>
+			<li><i class="icon-pencil"></i> icon-pencil</li>
+			<li><i class="icon-picture"></i> icon-picture</li>
+			<li><i class="icon-plane"></i> icon-plane</li>
+			<li><i class="icon-plus"></i> icon-plus</li>
+			<li><i class="icon-plus-sign"></i> icon-plus-sign</li>
+			<li><i class="icon-print"></i> icon-print</li>
+			<li><i class="icon-pushpin"></i> icon-pushpin</li>
+			<li><i class="icon-qrcode"></i> icon-qrcode</li>
+			<li><i class="icon-question-sign"></i> icon-question-sign</li>
+			<li><i class="icon-random"></i> icon-random</li>
+			<li><i class="icon-refresh"></i> icon-refresh</li>
+			<li><i class="icon-remove"></i> icon-remove</li>
+			<li><i class="icon-remove-circle"></i> icon-remove-circle</li>
+			<li><i class="icon-remove-sign"></i> icon-remove-sign</li>
+			<li><i class="icon-reorder"></i> icon-reorder</li>
+			<li><i class="icon-resize-horizontal"></i> icon-resize-horizontal</li>
+			<li><i class="icon-resize-vertical"></i> icon-resize-vertical</li>
+			<li><i class="icon-retweet"></i> icon-retweet</li>
+			<li><i class="icon-road"></i> icon-road</li>
+			<li><i class="icon-rss"></i> icon-rss</li>
+			<li><i class="icon-screenshot"></i> icon-screenshot</li>
+			<li><i class="icon-search"></i> icon-search</li>
+			<li><i class="icon-share"></i> icon-share</li>
+			<li><i class="icon-share-alt"></i> icon-share-alt</li>
+			<li><i class="icon-shopping-cart"></i> icon-shopping-cart</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-signal"></i> icon-signal</li>
+			<li><i class="icon-signin"></i> icon-signin</li>
+			<li><i class="icon-signout"></i> icon-signout</li>
+			<li><i class="icon-sitemap"></i> icon-sitemap</li>
+			<li><i class="icon-sort"></i> icon-sort</li>
+			<li><i class="icon-sort-down"></i> icon-sort-down</li>
+			<li><i class="icon-sort-up"></i> icon-sort-up</li>
+			<li><i class="icon-star"></i> icon-star</li>
+			<li><i class="icon-star-empty"></i> icon-star-empty</li>
+			<li><i class="icon-star-half"></i> icon-star-half</li>
+			<li><i class="icon-tag"></i> icon-tag</li>
+			<li><i class="icon-tags"></i> icon-tags</li>
+			<li><i class="icon-tasks"></i> icon-tasks</li>
+			<li><i class="icon-thumbs-down"></i> icon-thumbs-down</li>
+			<li><i class="icon-thumbs-up"></i> icon-thumbs-up</li>
+			<li><i class="icon-time"></i> icon-time</li>
+			<li><i class="icon-tint"></i> icon-tint</li>
+			<li><i class="icon-trash"></i> icon-trash</li>
+			<li><i class="icon-trophy"></i> icon-trophy</li>
+			<li><i class="icon-truck"></i> icon-truck</li>
+			<li><i class="icon-umbrella"></i> icon-umbrella</li>
+			<li><i class="icon-upload"></i> icon-upload</li>
+			<li><i class="icon-upload-alt"></i> icon-upload-alt</li>
+			<li><i class="icon-user"></i> icon-user</li>
+			<li><i class="icon-user-md"></i> icon-user-md</li>
+			<li><i class="icon-volume-off"></i> icon-volume-off</li>
+			<li><i class="icon-volume-down"></i> icon-volume-down</li>
+			<li><i class="icon-volume-up"></i> icon-volume-up</li>
+			<li><i class="icon-warning-sign"></i> icon-warning-sign</li>
+			<li><i class="icon-wrench"></i> icon-wrench</li>
+			<li><i class="icon-zoom-in"></i> icon-zoom-in</li>
+			<li><i class="icon-zoom-out"></i> icon-zoom-out</li>
+			</ul></div></div>
+			
+			<div class="row-fluid">
+			<div class="span12">
+			<h3>Text Editor Icons</h3>
+			</div>
+			</div>
+			
+			<div class="row-fluid">
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-file"></i> icon-file</li>
+			<li><i class="icon-cut"></i> icon-cut</li>
+			<li><i class="icon-copy"></i> icon-copy</li>
+			<li><i class="icon-paste"></i> icon-paste</li>
+			<li><i class="icon-save"></i> icon-save</li>
+			<li><i class="icon-undo"></i> icon-undo</li>
+			<li><i class="icon-repeat"></i> icon-repeat</li>
+			<li><i class="icon-paper-clip"></i> icon-paper-clip</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-text-height"></i> icon-text-height</li>
+			<li><i class="icon-text-width"></i> icon-text-width</li>
+			<li><i class="icon-align-left"></i> icon-align-left</li>
+			<li><i class="icon-align-center"></i> icon-align-center</li>
+			<li><i class="icon-align-right"></i> icon-align-right</li>
+			<li><i class="icon-align-justify"></i> icon-align-justify</li>
+			<li><i class="icon-indent-left"></i> icon-indent-left</li>
+			<li><i class="icon-indent-right"></i> icon-indent-right</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-font"></i> icon-font</li>
+			<li><i class="icon-bold"></i> icon-bold</li>
+			<li><i class="icon-italic"></i> icon-italic</li>
+			<li><i class="icon-strikethrough"></i> icon-strikethrough</li>
+			<li><i class="icon-underline"></i> icon-underline</li>
+			<li><i class="icon-link"></i> icon-link</li>
+			<li><i class="icon-columns"></i> icon-columns</li>
+			<li><i class="icon-table"></i> icon-table</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-th-large"></i> icon-th-large</li>
+			<li><i class="icon-th"></i> icon-th</li>
+			<li><i class="icon-th-list"></i> icon-th-list</li>
+			<li><i class="icon-list"></i> icon-list</li>
+			<li><i class="icon-list-ol"></i> icon-list-ol</li>
+			<li><i class="icon-list-ul"></i> icon-list-ul</li>
+			<li><i class="icon-list-alt"></i> icon-list-alt</li>
+			</ul></div>
+			</div>
+			
+			
+			<div class="row-fluid">
+			<div class="span12">
+			<h3>Directional Icons</h3>
+			</div></div>
+			
+			<div class="row-fluid">
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-arrow-down"></i> icon-arrow-down</li>
+			<li><i class="icon-arrow-left"></i> icon-arrow-left</li>
+			<li><i class="icon-arrow-right"></i> icon-arrow-right</li>
+			<li><i class="icon-arrow-up"></i> icon-arrow-up</li>
+			<li><i class="icon-chevron-down"></i> icon-chevron-down</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-circle-arrow-down"></i> icon-circle-arrow-down</li>
+			<li><i class="icon-circle-arrow-left"></i> icon-circle-arrow-left</li>
+			<li><i class="icon-circle-arrow-right"></i> icon-circle-arrow-right</li>
+			<li><i class="icon-circle-arrow-up"></i> icon-circle-arrow-up</li>
+			<li><i class="icon-chevron-left"></i> icon-chevron-left</li></ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-caret-down"></i> icon-caret-down</li>
+			<li><i class="icon-caret-left"></i> icon-caret-left</li>
+			<li><i class="icon-caret-right"></i> icon-caret-right</li>
+			<li><i class="icon-caret-up"></i> icon-caret-up</li>
+			<li><i class="icon-chevron-right"></i> icon-chevron-right</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-hand-down"></i> icon-hand-down</li>
+			<li><i class="icon-hand-left"></i> icon-hand-left</li>
+			<li><i class="icon-hand-right"></i> icon-hand-right</li>
+			<li><i class="icon-hand-up"></i> icon-hand-up</li>
+			<li><i class="icon-chevron-up"></i> icon-chevron-up</li>
+			</ul></div></div>
+			
+			<div class="row-fluid">
+			<div class="span12">
+			<h3>Video Player Icons</h3>
+			</div></div>
+			
+			<div class="row-fluid">
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-play-circle"></i> icon-play-circle</li>
+			<li><i class="icon-play"></i> icon-play</li>
+			<li><i class="icon-pause"></i> icon-pause</li>
+			<li><i class="icon-stop"></i> icon-stop</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-step-backward"></i> icon-step-backward</li>
+			<li><i class="icon-fast-backward"></i> icon-fast-backward</li>
+			<li><i class="icon-backward"></i> icon-backward</li>
+			<li><i class="icon-forward"></i> icon-forward</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-fast-forward"></i> icon-fast-forward</li>
+			<li><i class="icon-step-forward"></i> icon-step-forward</li>
+			<li><i class="icon-eject"></i> icon-eject</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-fullscreen"></i> icon-fullscreen</li>
+			<li><i class="icon-resize-full"></i> icon-resize-full</li>
+			<li><i class="icon-resize-small"></i> icon-resize-small</li>
+			</ul></div></div>
+			
+			<div class="row-fluid">
+			<div class="span12">
+			<h3>Social Icons</h3>
+			</div></div>
+			
+			<div class="row-fluid">
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-phone"></i> icon-phone</li>
+			<li><i class="icon-phone-sign"></i> icon-phone-sign</li>
+			<li><i class="icon-facebook"></i> icon-facebook</li>
+			<li><i class="icon-facebook-sign"></i> icon-facebook-sign</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-twitter"></i> icon-twitter</li>
+			<li><i class="icon-twitter-sign"></i> icon-twitter-sign</li>
+			<li><i class="icon-github"></i> icon-github</li>
+			<li><i class="icon-github-sign"></i> icon-github-sign</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-linkedin"></i> icon-linkedin</li>
+			<li><i class="icon-linkedin-sign"></i> icon-linkedin-sign</li>
+			<li><i class="icon-pinterest"></i> icon-pinterest</li>
+			<li><i class="icon-pinterest-sign"></i> icon-pinterest-sign</li>
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-google-plus"></i> icon-google-plus</li>
+			<li><i class="icon-google-plus-sign"></i> icon-google-plus-sign</li>
+			<li><i class="icon-sign-blank"></i> icon-sign-blank</li>
+			</ul></div></div>
+			
+			
+			
+		
+			<div class="row-fluid">
+			<div class="span12">
+			<h3>New Icons in 3.2</h3>
+			</div>
+			</div>
+			
+			<div class="row-fluid">
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-compass"></i> icon-compass</li>
+			<li><i class="icon-collapse"></i> icon-collapse</li>
+			<li><i class="icon-collapse-top"></i> icon-collapse-top</li>
+			<li><i class="icon-expand"></i> icon-expand</li>
+			<li><i class="icon-eur"></i> icon-eur</li>
+			<li><i class="icon-euro"></i> icon-euro <span class="muted">(alias)</span></li>
+			<li><i class="icon-gbp"></i> icon-gbp</li>
+			<li><i class="icon-usd"></i> icon-usd</li>
+			
+			<li><i class="icon-xing-sign"></i> icon-xing-sign</li>
+			<li><i class="icon-youtube-play"></i> icon-youtube-play</li>
+			<li><i class="icon-dropbox"></i> icon-dropbox</li>
+			<li><i class="icon-stackexchange"></i> icon-stackexchange</li>
+			<li><i class="icon-instagram"></i> icon-instagram</li>
+			<li><i class="icon-flickr"></i> icon-flickr</li>
+			<li><i class="icon-adn"></i> icon-adn</li>
+			<li><i class="icon-bitbucket"></i> icon-bitbucket</li>
+			<li><i class="icon-renren"></i> icon-renren</li>
+			
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-dollar"></i> icon-dollar <span class="muted">(alias)</span></li>
+			<li><i class="icon-inr"></i> icon-inr</li>
+			<li><i class="icon-rupee"></i> icon-rupee <span class="muted">(alias)</span></li>
+			<li><i class="icon-jpy"></i> icon-jpy</li>
+			<li><i class="icon-yen"></i> icon-yen <span class="muted">(alias)</span></li>
+			<li><i class="icon-cny"></i> icon-cny</li>
+			<li><i class="icon-renminbi"></i> icon-renminbi <span class="muted">(alias)</span></li>
+			<li><i class="icon-krw"></i> icon-krw</li>
+			
+			<li><i class="icon-bitbucket-sign"></i> icon-bitbucket-sign</li>
+			<li><i class="icon-tumblr"></i> icon-tumblr</li>
+			<li><i class="icon-tumblr-sign"></i> icon-tumblr-sign</li>
+			<li><i class="icon-long-arrow-down"></i> icon-long-arrow-down</li>
+			<li><i class="icon-long-arrow-up"></i> icon-long-arrow-up</li>
+			<li><i class="icon-long-arrow-left"></i> icon-long-arrow-left</li>
+			<li><i class="icon-long-arrow-right"></i> icon-long-arrow-right</li>
+			<li><i class="icon-apple"></i> icon-apple</li>
+			
+			
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-won"></i> icon-won <span class="muted">(alias)</span></li>
+			<li><i class="icon-btc"></i> icon-btc</li>
+			<li><i class="icon-bitcoin"></i> icon-bitcoin <span class="muted">(alias)</span></li>
+			<li><i class="icon-file"></i> icon-file</li>
+			<li><i class="icon-file-text"></i> icon-file-text</li>
+			<li><i class="icon-sort-by-alphabet"></i> icon-sort-by-alphabet</li>
+			<li><i class="icon-sort-by-alphabet-alt"></i> icon-sort-by-alphabet-alt</li>
+			<li><i class="icon-sort-by-attributes"></i> icon-sort-by-attributes</li>
+			
+			<li><i class="icon-windows"></i> icon-windows</li>
+			<li><i class="icon-android"></i> icon-android</li>
+			<li><i class="icon-linux"></i> icon-linux</li>
+			<li><i class="icon-dribbble"></i> icon-dribbble</li>
+			<li><i class="icon-skype"></i> icon-skype</li>
+			<li><i class="icon-foursquare"></i> icon-foursquare</li>
+			<li><i class="icon-trello"></i> icon-trello</li>
+			<li><i class="icon-female"></i> icon-female</li>
+			
+			
+			</ul></div>
+			
+			<div class="span3">
+			<ul class="unstyled zoom-tweak">
+			<li><i class="icon-sort-by-attributes-alt"></i> icon-sort-by-attributes-alt</li>
+			<li><i class="icon-sort-by-order"></i> icon-sort-by-order</li>
+			<li><i class="icon-sort-by-order-alt"></i> icon-sort-by-order-alt</li>
+			<li><i class="icon-thumbs-up"></i> icon-thumbs-up</li>
+			<li><i class="icon-thumbs-down"></i> icon-thumbs-down</li>
+			<li><i class="icon-youtube-sign"></i> icon-youtube-sign</li>
+			<li><i class="icon-youtube"></i> icon-youtube</li>
+			<li><i class="icon-xing"></i> icon-xing</li>
+			
+			<li><i class="icon-male"></i> icon-male</li>
+			<li><i class="icon-gittip"></i> icon-gittip</li>
+			<li><i class="icon-sun"></i> icon-sun</li>
+			<li><i class="icon-moon"></i> icon-moon</li>
+			<li><i class="icon-archive"></i> icon-archive</li>
+			<li><i class="icon-bug"></i> icon-bug</li>
+			<li><i class="icon-vk"></i> icon-vk</li>
+			<li><i class="icon-weibo"></i> icon-weibo</li>
+			
+			</ul></div>
+			
+			</div>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="row-fluid">
+			<div class="span12">
+			<h3>Custom font Icons</h3>
+			</div>
+			</div>
+			
+			<div class="row-fluid">
+			
+			<div class="w-main centered">
+	<section id="glyphs" class="mtm clearfix">
+	
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe000;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe001;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe002;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe003;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe004;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe005;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe006;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe007;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe008;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe009;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe00a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe00b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe00c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe00d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe00e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe00f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe010;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe011;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe012;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe013;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe014;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe015;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe016;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe017;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe018;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe019;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe01a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe01b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe01c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe01d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe01e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe01f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe020;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe021;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe022;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe023;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe024;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe025;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe026;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe027;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe028;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe029;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe02a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe02b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe02c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe02d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe02e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe02f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe030;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe031;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe032;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe033;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe034;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe035;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe036;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe037;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe038;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe039;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe03a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe03b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe03c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe03d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe03e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe03f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe040;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe041;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe042;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe043;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe044;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe045;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe046;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe047;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe048;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe049;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe04a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe04b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe04c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe04d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe04e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe04f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe050;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe051;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe052;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe053;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe054;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe055;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe056;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe057;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe058;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe059;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe05a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe05b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe05c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe05d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe05e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe05f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe060;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe061;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe062;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe063;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe064;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe065;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe066;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe067;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe068;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe069;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe06a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe06b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe06c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe06d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe06e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe06f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe070;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe071;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe072;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe073;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe074;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe075;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe076;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe077;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe078;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe079;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe07a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe07b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe07c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe07d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe07e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe07f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe080;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe081;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe082;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe083;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe084;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe085;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe086;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe087;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe088;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe089;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe08a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe08b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe08c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe08d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe08e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe08f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe090;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe091;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe092;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe093;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe094;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe095;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe096;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe097;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe098;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe099;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe09a;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe09b;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe09c;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe09d;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe09e;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe09f;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a0;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a1;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a2;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a3;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a4;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a5;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a6;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a7;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a8;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0a9;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0aa;" readonly="readonly">
+	</div>
+	<div class="glyph">
+		<div data-icon="" aria-hidden="true" class="fs1"></div>
+		<input type="text" value="&amp;#xe0ab;" readonly="readonly">
+	</div>
+	
+	</section>
+	
+	<div class="clear"></div>
+	<section id="glyphs" class="mtm clearfix">
+
+	<div class="row-fluid">
+		<div class="span12">
+		<h3>Class Names</h3>
+		</div>
+	</div>
+	
+	<span class="box1">
+		<span class="custom-none" aria-hidden="true"></span>
+		&nbsp;custom-none
+	</span>
+	<span class="box1">
+		<span class="custom-bootstrap" aria-hidden="true"></span>
+		&nbsp;custom-bootstrap
+	</span>
+	<span class="box1">
+		<span class="custom-less_c" aria-hidden="true"></span>
+		&nbsp;custom-less_c
+	</span>
+	<span class="box1">
+		<span class="custom-w3c" aria-hidden="true"></span>
+		&nbsp;custom-w3c
+	</span>
+	<span class="box1">
+		<span class="custom-pencil" aria-hidden="true"></span>
+		&nbsp;custom-pencil
+	</span>
+	<span class="box1">
+		<span class="custom-pencil-2" aria-hidden="true"></span>
+		&nbsp;custom-pencil-2
+	</span>
+	<span class="box1">
+		<span class="custom-image" aria-hidden="true"></span>
+		&nbsp;custom-image
+	</span>
+	<span class="box1">
+		<span class="custom-image-2" aria-hidden="true"></span>
+		&nbsp;custom-image-2
+	</span>
+	<span class="box1">
+		<span class="custom-images" aria-hidden="true"></span>
+		&nbsp;custom-images
+	</span>
+	<span class="box1">
+		<span class="custom-pacman" aria-hidden="true"></span>
+		&nbsp;custom-pacman
+	</span>
+	<span class="box1">
+		<span class="custom-diamonds" aria-hidden="true"></span>
+		&nbsp;custom-diamonds
+	</span>
+	<span class="box1">
+		<span class="custom-clubs" aria-hidden="true"></span>
+		&nbsp;custom-clubs
+	</span>
+	<span class="box1">
+		<span class="custom-spades" aria-hidden="true"></span>
+		&nbsp;custom-spades
+	</span>
+	<span class="box1">
+		<span class="custom-tags" aria-hidden="true"></span>
+		&nbsp;custom-tags
+	</span>
+	<span class="box1">
+		<span class="custom-tag" aria-hidden="true"></span>
+		&nbsp;custom-tag
+	</span>
+	<span class="box1">
+		<span class="custom-folder-open" aria-hidden="true"></span>
+		&nbsp;custom-folder-open
+	</span>
+	<span class="box1">
+		<span class="custom-folder" aria-hidden="true"></span>
+		&nbsp;custom-folder
+	</span>
+	<span class="box1">
+		<span class="custom-library" aria-hidden="true"></span>
+		&nbsp;custom-library
+	</span>
+	<span class="box1">
+		<span class="custom-feed" aria-hidden="true"></span>
+		&nbsp;custom-feed
+	</span>
+	<span class="box1">
+		<span class="custom-podcast" aria-hidden="true"></span>
+		&nbsp;custom-podcast
+	</span>
+	<span class="box1">
+		<span class="custom-connection" aria-hidden="true"></span>
+		&nbsp;custom-connection
+	</span>
+	<span class="box1">
+		<span class="custom-coin" aria-hidden="true"></span>
+		&nbsp;custom-coin
+	</span>
+	<span class="box1">
+		<span class="custom-pushpin" aria-hidden="true"></span>
+		&nbsp;custom-pushpin
+	</span>
+	<span class="box1">
+		<span class="custom-location" aria-hidden="true"></span>
+		&nbsp;custom-location
+	</span>
+	<span class="box1">
+		<span class="custom-location-2" aria-hidden="true"></span>
+		&nbsp;custom-location-2
+	</span>
+	<span class="box1">
+		<span class="custom-map" aria-hidden="true"></span>
+		&nbsp;custom-map
+	</span>
+	<span class="box1">
+		<span class="custom-map-2" aria-hidden="true"></span>
+		&nbsp;custom-map-2
+	</span>
+	<span class="box1">
+		<span class="custom-history" aria-hidden="true"></span>
+		&nbsp;custom-history
+	</span>
+	<span class="box1">
+		<span class="custom-clock" aria-hidden="true"></span>
+		&nbsp;custom-clock
+	</span>
+	<span class="box1">
+		<span class="custom-clock-2" aria-hidden="true"></span>
+		&nbsp;custom-clock-2
+	</span>
+	<span class="box1">
+		<span class="custom-alarm" aria-hidden="true"></span>
+		&nbsp;custom-alarm
+	</span>
+	<span class="box1">
+		<span class="custom-alarm-2" aria-hidden="true"></span>
+		&nbsp;custom-alarm-2
+	</span>
+	<span class="box1">
+		<span class="custom-stopwatch" aria-hidden="true"></span>
+		&nbsp;custom-stopwatch
+	</span>
+	<span class="box1">
+		<span class="custom-bell" aria-hidden="true"></span>
+		&nbsp;custom-bell
+	</span>
+	<span class="box1">
+		<span class="custom-calendar" aria-hidden="true"></span>
+		&nbsp;custom-calendar
+	</span>
+	<span class="box1">
+		<span class="custom-calendar-2" aria-hidden="true"></span>
+		&nbsp;custom-calendar-2
+	</span>
+	<span class="box1">
+		<span class="custom-screen" aria-hidden="true"></span>
+		&nbsp;custom-screen
+	</span>
+	<span class="box1">
+		<span class="custom-laptop" aria-hidden="true"></span>
+		&nbsp;custom-laptop
+	</span>
+	<span class="box1">
+		<span class="custom-mobile" aria-hidden="true"></span>
+		&nbsp;custom-mobile
+	</span>
+	<span class="box1">
+		<span class="custom-mobile-2" aria-hidden="true"></span>
+		&nbsp;custom-mobile-2
+	</span>
+	<span class="box1">
+		<span class="custom-tablet" aria-hidden="true"></span>
+		&nbsp;custom-tablet
+	</span>
+	<span class="box1">
+		<span class="custom-tv" aria-hidden="true"></span>
+		&nbsp;custom-tv
+	</span>
+	<span class="box1">
+		<span class="custom-spinner" aria-hidden="true"></span>
+		&nbsp;custom-spinner
+	</span>
+	<span class="box1">
+		<span class="custom-busy" aria-hidden="true"></span>
+		&nbsp;custom-busy
+	</span>
+	<span class="box1">
+		<span class="custom-spinner-2" aria-hidden="true"></span>
+		&nbsp;custom-spinner-2
+	</span>
+	<span class="box1">
+		<span class="custom-spinner-3" aria-hidden="true"></span>
+		&nbsp;custom-spinner-3
+	</span>
+	<span class="box1">
+		<span class="custom-spinner-4" aria-hidden="true"></span>
+		&nbsp;custom-spinner-4
+	</span>
+	<span class="box1">
+		<span class="custom-spinner-5" aria-hidden="true"></span>
+		&nbsp;custom-spinner-5
+	</span>
+	<span class="box1">
+		<span class="custom-spinner-6" aria-hidden="true"></span>
+		&nbsp;custom-spinner-6
+	</span>
+	<span class="box1">
+		<span class="custom-redo" aria-hidden="true"></span>
+		&nbsp;custom-redo
+	</span>
+	<span class="box1">
+		<span class="custom-undo" aria-hidden="true"></span>
+		&nbsp;custom-undo
+	</span>
+	<span class="box1">
+		<span class="custom-zoom-out" aria-hidden="true"></span>
+		&nbsp;custom-zoom-out
+	</span>
+	<span class="box1">
+		<span class="custom-zoom-in" aria-hidden="true"></span>
+		&nbsp;custom-zoom-in
+	</span>
+	<span class="box1">
+		<span class="custom-search" aria-hidden="true"></span>
+		&nbsp;custom-search
+	</span>
+	<span class="box1">
+		<span class="custom-quotes-left" aria-hidden="true"></span>
+		&nbsp;custom-quotes-left
+	</span>
+	<span class="box1">
+		<span class="custom-users" aria-hidden="true"></span>
+		&nbsp;custom-users
+	</span>
+	<span class="box1">
+		<span class="custom-user" aria-hidden="true"></span>
+		&nbsp;custom-user
+	</span>
+	<span class="box1">
+		<span class="custom-users-2" aria-hidden="true"></span>
+		&nbsp;custom-users-2
+	</span>
+	<span class="box1">
+		<span class="custom-user-2" aria-hidden="true"></span>
+		&nbsp;custom-user-2
+	</span>
+	<span class="box1">
+		<span class="custom-bubbles" aria-hidden="true"></span>
+		&nbsp;custom-bubbles
+	</span>
+	<span class="box1">
+		<span class="custom-bubbles-2" aria-hidden="true"></span>
+		&nbsp;custom-bubbles-2
+	</span>
+	<span class="box1">
+		<span class="custom-bubble" aria-hidden="true"></span>
+		&nbsp;custom-bubble
+	</span>
+	<span class="box1">
+		<span class="custom-bubbles-3" aria-hidden="true"></span>
+		&nbsp;custom-bubbles-3
+	</span>
+	<span class="box1">
+		<span class="custom-bubble-2" aria-hidden="true"></span>
+		&nbsp;custom-bubble-2
+	</span>
+	<span class="box1">
+		<span class="custom-bubbles-4" aria-hidden="true"></span>
+		&nbsp;custom-bubbles-4
+	</span>
+	<span class="box1">
+		<span class="custom-wand" aria-hidden="true"></span>
+		&nbsp;custom-wand
+	</span>
+	<span class="box1">
+		<span class="custom-stats" aria-hidden="true"></span>
+		&nbsp;custom-stats
+	</span>
+	<span class="box1">
+		<span class="custom-bars" aria-hidden="true"></span>
+		&nbsp;custom-bars
+	</span>
+	<span class="box1">
+		<span class="custom-bars-2" aria-hidden="true"></span>
+		&nbsp;custom-bars-2
+	</span>
+	<span class="box1">
+		<span class="custom-list" aria-hidden="true"></span>
+		&nbsp;custom-list
+	</span>
+	<span class="box1">
+		<span class="custom-list-2" aria-hidden="true"></span>
+		&nbsp;custom-list-2
+	</span>
+	<span class="box1">
+		<span class="custom-numbered-list" aria-hidden="true"></span>
+		&nbsp;custom-numbered-list
+	</span>
+	<span class="box1">
+		<span class="custom-menu" aria-hidden="true"></span>
+		&nbsp;custom-menu
+	</span>
+	<span class="box1">
+		<span class="custom-menu-2" aria-hidden="true"></span>
+		&nbsp;custom-menu-2
+	</span>
+	<span class="box1">
+		<span class="custom-link" aria-hidden="true"></span>
+		&nbsp;custom-link
+	</span>
+	<span class="box1">
+		<span class="custom-earth" aria-hidden="true"></span>
+		&nbsp;custom-earth
+	</span>
+	<span class="box1">
+		<span class="custom-happy" aria-hidden="true"></span>
+		&nbsp;custom-happy
+	</span>
+	<span class="box1">
+		<span class="custom-happy-2" aria-hidden="true"></span>
+		&nbsp;custom-happy-2
+	</span>
+	<span class="box1">
+		<span class="custom-smiley" aria-hidden="true"></span>
+		&nbsp;custom-smiley
+	</span>
+	<span class="box1">
+		<span class="custom-smiley-2" aria-hidden="true"></span>
+		&nbsp;custom-smiley-2
+	</span>
+	<span class="box1">
+		<span class="custom-tongue" aria-hidden="true"></span>
+		&nbsp;custom-tongue
+	</span>
+	<span class="box1">
+		<span class="custom-tongue-2" aria-hidden="true"></span>
+		&nbsp;custom-tongue-2
+	</span>
+	<span class="box1">
+		<span class="custom-sad" aria-hidden="true"></span>
+		&nbsp;custom-sad
+	</span>
+	<span class="box1">
+		<span class="custom-sad-2" aria-hidden="true"></span>
+		&nbsp;custom-sad-2
+	</span>
+	<span class="box1">
+		<span class="custom-wink" aria-hidden="true"></span>
+		&nbsp;custom-wink
+	</span>
+	<span class="box1">
+		<span class="custom-wink-2" aria-hidden="true"></span>
+		&nbsp;custom-wink-2
+	</span>
+	<span class="box1">
+		<span class="custom-grin" aria-hidden="true"></span>
+		&nbsp;custom-grin
+	</span>
+	<span class="box1">
+		<span class="custom-grin-2" aria-hidden="true"></span>
+		&nbsp;custom-grin-2
+	</span>
+	<span class="box1">
+		<span class="custom-cool" aria-hidden="true"></span>
+		&nbsp;custom-cool
+	</span>
+	<span class="box1">
+		<span class="custom-eye" aria-hidden="true"></span>
+		&nbsp;custom-eye
+	</span>
+	<span class="box1">
+		<span class="custom-eye-blocked" aria-hidden="true"></span>
+		&nbsp;custom-eye-blocked
+	</span>
+	<span class="box1">
+		<span class="custom-eye-2" aria-hidden="true"></span>
+		&nbsp;custom-eye-2
+	</span>
+	<span class="box1">
+		<span class="custom-switch" aria-hidden="true"></span>
+		&nbsp;custom-switch
+	</span>
+	<span class="box1">
+		<span class="custom-angry" aria-hidden="true"></span>
+		&nbsp;custom-angry
+	</span>
+	<span class="box1">
+		<span class="custom-angry-2" aria-hidden="true"></span>
+		&nbsp;custom-angry-2
+	</span>
+	<span class="box1">
+		<span class="custom-cool-2" aria-hidden="true"></span>
+		&nbsp;custom-cool-2
+	</span>
+	<span class="box1">
+		<span class="custom-evil" aria-hidden="true"></span>
+		&nbsp;custom-evil
+	</span>
+	<span class="box1">
+		<span class="custom-evil-2" aria-hidden="true"></span>
+		&nbsp;custom-evil-2
+	</span>
+	<span class="box1">
+		<span class="custom-shocked" aria-hidden="true"></span>
+		&nbsp;custom-shocked
+	</span>
+	<span class="box1">
+		<span class="custom-shocked-2" aria-hidden="true"></span>
+		&nbsp;custom-shocked-2
+	</span>
+	<span class="box1">
+		<span class="custom-confused" aria-hidden="true"></span>
+		&nbsp;custom-confused
+	</span>
+	<span class="box1">
+		<span class="custom-confused-2" aria-hidden="true"></span>
+		&nbsp;custom-confused-2
+	</span>
+	<span class="box1">
+		<span class="custom-neutral" aria-hidden="true"></span>
+		&nbsp;custom-neutral
+	</span>
+	<span class="box1">
+		<span class="custom-neutral-2" aria-hidden="true"></span>
+		&nbsp;custom-neutral-2
+	</span>
+	<span class="box1">
+		<span class="custom-wondering" aria-hidden="true"></span>
+		&nbsp;custom-wondering
+	</span>
+	<span class="box1">
+		<span class="custom-wondering-2" aria-hidden="true"></span>
+		&nbsp;custom-wondering-2
+	</span>
+	<span class="box1">
+		<span class="custom-spell-check" aria-hidden="true"></span>
+		&nbsp;custom-spell-check
+	</span>
+	<span class="box1">
+		<span class="custom-checkmark" aria-hidden="true"></span>
+		&nbsp;custom-checkmark
+	</span>
+	<span class="box1">
+		<span class="custom-checkmark-2" aria-hidden="true"></span>
+		&nbsp;custom-checkmark-2
+	</span>
+	<span class="box1">
+		<span class="custom-checkbox-checked" aria-hidden="true"></span>
+		&nbsp;custom-checkbox-checked
+	</span>
+	<span class="box1">
+		<span class="custom-checkbox-unchecked" aria-hidden="true"></span>
+		&nbsp;custom-checkbox-unchecked
+	</span>
+	<span class="box1">
+		<span class="custom-checkbox-partial" aria-hidden="true"></span>
+		&nbsp;custom-checkbox-partial
+	</span>
+	<span class="box1">
+		<span class="custom-radio-checked" aria-hidden="true"></span>
+		&nbsp;custom-radio-checked
+	</span>
+	<span class="box1">
+		<span class="custom-radio-unchecked" aria-hidden="true"></span>
+		&nbsp;custom-radio-unchecked
+	</span>
+	<span class="box1">
+		<span class="custom-crop" aria-hidden="true"></span>
+		&nbsp;custom-crop
+	</span>
+	<span class="box1">
+		<span class="custom-scissors" aria-hidden="true"></span>
+		&nbsp;custom-scissors
+	</span>
+	<span class="box1">
+		<span class="custom-font" aria-hidden="true"></span>
+		&nbsp;custom-font
+	</span>
+	<span class="box1">
+		<span class="custom-text-height" aria-hidden="true"></span>
+		&nbsp;custom-text-height
+	</span>
+	<span class="box1">
+		<span class="custom-text-width" aria-hidden="true"></span>
+		&nbsp;custom-text-width
+	</span>
+	<span class="box1">
+		<span class="custom-bold" aria-hidden="true"></span>
+		&nbsp;custom-bold
+	</span>
+	<span class="box1">
+		<span class="custom-underline" aria-hidden="true"></span>
+		&nbsp;custom-underline
+	</span>
+	<span class="box1">
+		<span class="custom-italic" aria-hidden="true"></span>
+		&nbsp;custom-italic
+	</span>
+	<span class="box1">
+		<span class="custom-strikethrough" aria-hidden="true"></span>
+		&nbsp;custom-strikethrough
+	</span>
+	<span class="box1">
+		<span class="custom-right-to-left" aria-hidden="true"></span>
+		&nbsp;custom-right-to-left
+	</span>
+	<span class="box1">
+		<span class="custom-left-to-right" aria-hidden="true"></span>
+		&nbsp;custom-left-to-right
+	</span>
+	<span class="box1">
+		<span class="custom-code" aria-hidden="true"></span>
+		&nbsp;custom-code
+	</span>
+	<span class="box1">
+		<span class="custom-embed" aria-hidden="true"></span>
+		&nbsp;custom-embed
+	</span>
+	<span class="box1">
+		<span class="custom-console" aria-hidden="true"></span>
+		&nbsp;custom-console
+	</span>
+	<span class="box1">
+		<span class="custom-new-tab" aria-hidden="true"></span>
+		&nbsp;custom-new-tab
+	</span>
+	<span class="box1">
+		<span class="custom-html5" aria-hidden="true"></span>
+		&nbsp;custom-html5
+	</span>
+	<span class="box1">
+		<span class="custom-html5-2" aria-hidden="true"></span>
+		&nbsp;custom-html5-2
+	</span>
+	<span class="box1">
+		<span class="custom-css3" aria-hidden="true"></span>
+		&nbsp;custom-css3
+	</span>
+	<span class="box1">
+		<span class="custom-chrome" aria-hidden="true"></span>
+		&nbsp;custom-chrome
+	</span>
+	<span class="box1">
+		<span class="custom-firefox" aria-hidden="true"></span>
+		&nbsp;custom-firefox
+	</span>
+	<span class="box1">
+		<span class="custom-IE" aria-hidden="true"></span>
+		&nbsp;custom-IE
+	</span>
+	<span class="box1">
+		<span class="custom-opera" aria-hidden="true"></span>
+		&nbsp;custom-opera
+	</span>
+	<span class="box1">
+		<span class="custom-safari" aria-hidden="true"></span>
+		&nbsp;custom-safari
+	</span>
+	<span class="box1">
+		<span class="custom-IcoMoon" aria-hidden="true"></span>
+		&nbsp;custom-IcoMoon
+	</span>
+	<span class="box1">
+		<span class="custom-earth-2" aria-hidden="true"></span>
+		&nbsp;custom-earth-2
+	</span>
+	<span class="box1">
+		<span class="custom-target" aria-hidden="true"></span>
+		&nbsp;custom-target
+	</span>
+	<span class="box1">
+		<span class="custom-list-3" aria-hidden="true"></span>
+		&nbsp;custom-list-3
+	</span>
+	<span class="box1">
+		<span class="custom-smiley-3" aria-hidden="true"></span>
+		&nbsp;custom-smiley-3
+	</span>
+	<span class="box1">
+		<span class="custom-image-3" aria-hidden="true"></span>
+		&nbsp;custom-image-3
+	</span>
+	<span class="box1">
+		<span class="custom-equalizer" aria-hidden="true"></span>
+		&nbsp;custom-equalizer
+	</span>
+	<span class="box1">
+		<span class="custom-link-2" aria-hidden="true"></span>
+		&nbsp;custom-link-2
+	</span>
+	<span class="box1">
+		<span class="custom-at" aria-hidden="true"></span>
+		&nbsp;custom-at
+	</span>
+	<span class="box1">
+		<span class="custom-switch-2" aria-hidden="true"></span>
+		&nbsp;custom-switch-2
+	</span>
+	<span class="box1">
+		<span class="custom-apple" aria-hidden="true"></span>
+		&nbsp;custom-apple
+	</span>
+	<span class="box1">
+		<span class="custom-paperclip" aria-hidden="true"></span>
+		&nbsp;custom-paperclip
+	</span>
+	<span class="box1">
+		<span class="custom-code-2" aria-hidden="true"></span>
+		&nbsp;custom-code-2
+	</span>
+	<span class="box1">
+		<span class="custom-dashboard" aria-hidden="true"></span>
+		&nbsp;custom-dashboard
+	</span>
+	<span class="box1">
+		<span class="custom-meter2" aria-hidden="true"></span>
+		&nbsp;custom-meter2
+	</span>
+	<span class="box1">
+		<span class="custom-meter" aria-hidden="true"></span>
+		&nbsp;custom-meter
+	</span>
+	<span class="box1">
+		<span class="custom-rocket" aria-hidden="true"></span>
+		&nbsp;custom-rocket
+	</span>
+	<span class="box1">
+		<span class="custom-settings" aria-hidden="true"></span>
+		&nbsp;custom-settings
+	</span>
+	<span class="box1">
+		<span class="custom-equalizer-2" aria-hidden="true"></span>
+		&nbsp;custom-equalizer-2
+	</span>
+	<span class="box1">
+		<span class="custom-warning" aria-hidden="true"></span>
+		&nbsp;custom-warning
+	</span>
+	<span class="box1">
+		<span class="custom-notification" aria-hidden="true"></span>
+		&nbsp;custom-notification
+	</span>
+	<span class="box1">
+		<span class="custom-question" aria-hidden="true"></span>
+		&nbsp;custom-question
+	</span>
+	<span class="box1">
+		<span class="custom-info" aria-hidden="true"></span>
+		&nbsp;custom-info
+	</span>
+	<span class="box1">
+		<span class="custom-info-2" aria-hidden="true"></span>
+		&nbsp;custom-info-2
+	</span>
+	<span class="box1">
+		<span class="custom-blocked" aria-hidden="true"></span>
+		&nbsp;custom-blocked
+	</span>
+	<span class="box1">
+		<span class="custom-cancel-circle" aria-hidden="true"></span>
+		&nbsp;custom-cancel-circle
+	</span>
+	<span class="box1">
+		<span class="custom-checkmark-circle" aria-hidden="true"></span>
+		&nbsp;custom-checkmark-circle
+	</span>
+	<span class="box1">
+		<span class="custom-spam" aria-hidden="true"></span>
+		&nbsp;custom-spam
+	</span>
+	<span class="box1">
+		<span class="custom-enter" aria-hidden="true"></span>
+		&nbsp;custom-enter
+	</span>
+	<span class="box1">
+		<span class="custom-exit" aria-hidden="true"></span>
+		&nbsp;custom-exit
+	</span>
+	<span class="box1">
+		<span class="custom-shuffle" aria-hidden="true"></span>
+		&nbsp;custom-shuffle
+	</span>
+	<span class="box1">
+		<span class="custom-tab" aria-hidden="true"></span>
+		&nbsp;custom-tab
+	</span>
+	<span class="box1">
+		<span class="custom-quill" aria-hidden="true"></span>
+		&nbsp;custom-quill
+	</span>
+	<span class="box1">
+		<span class="custom-forjq" aria-hidden="true"></span>
+		&nbsp;custom-forjq
+	</span>
+	<span class="box1">
+		<span class="custom-forphp" aria-hidden="true"></span>
+		&nbsp;custom-forphp
+	</span>
+	
+	</section>
+		</div>
+	   </div>	
+	</div>
+	
+        
+		
+	<h2>Font Icon examples</h2>
+					  		  
+	<div class="bs-docs-example">
+
+	<h4><a href="#rotated-flipped" data-original-title="" title="">Rotated and Flipped Icons</a></h4>
+            <i class="icon-shield"></i>&nbsp; normal<br>
+            <i class="icon-shield icon-rotate-90"></i>&nbsp; icon-rotate-90<br>
+            <i class="icon-shield icon-rotate-180"></i>&nbsp; icon-rotate-180<br>
+            <i class="icon-shield icon-rotate-270"></i>&nbsp; icon-rotate-270<br>
+            <i class="icon-shield icon-flip-horizontal"></i>&nbsp; icon-flip-horizontal<br>
+            <i class="icon-shield icon-flip-vertical"></i>&nbsp; icon-flip-vertical
+		  
+    </div>
+					  
+	<div class="bs-docs-example">
+
+    <h4><a href="#stacked" data-original-title="" title="">Stacked Icons</a></h4>
+      <div class="stacked">
+       <span class="icon-stack">
+      <i class="icon-check-empty icon-stack-base"></i>
+      <i class="icon-twitter"></i>
+     </span>
+      icon-twitter on icon-check-empty<br>
+     <span class="icon-stack">
+      <i class="icon-circle icon-stack-base"></i>
+      <i class="icon-flag icon-light"></i>
+     </span>
+     icon-flag on icon-circle<br>
+     <span class="icon-stack">
+      <i class="icon-sign-blank icon-stack-base"></i>
+       <i class="icon-terminal icon-light"></i>
+     </span>
+           icon-terminal on icon-sign-blank
+        </div>
+
+    </div>	  
+					  
+  <div class="bs-docs-example">
+
+	<h4><a href="#bulleted-lists" data-original-title="" title="">Better Bulleted Lists</a></h4>
+        <ul class="icons-ul">
+     <li><i class="icon-li icon-chevron-sign-right"></i>New bulleted lists</li>
+     <li><i class="icon-li icon-bullseye"></i>Fix some old bugs</li>
+     <li><i class="icon-li icon-play-sign"></i>And deal with arbitrary</li>
+    <li><i class="icon-li icon-ok-sign"></i>Font sizes better</li>
+     </ul>	  
+ </div>			  
+					  
+		
+  <p>Place Font Awesome icons just about anywhere with the <code>&lt;i&gt;</code> tag.</p>
+
+                                    
+   <p> Increase the icon size by using the <code>icon-large</code> (33% increase), <code>icon-2x</code>,
+      <code>icon-3x</code>, or <code>icon-4x</code> classes.
+   </p>
+										
+           <div class="bs-docs-example">
+                      <div style="font-size: 24px; line-height: 1.5em;">
+                        <p><i class="icon-camera-retro icon-large"></i> icon-camera-retro</p>
+                        <p><i class="icon-camera-retro icon-2x"></i> icon-camera-retro</p>
+                        <p><i class="icon-camera-retro icon-3x"></i> icon-camera-retro</p>
+                       <p><i class="icon-camera-retro icon-4x"></i> icon-camera-retro</p>
+                        </div>
+            </div>	
+  
+  
+ 
+		 <h2>Bordered &amp; Pulled Icons</h2>
+
+    <div class="bs-docs-example">
+      <p>
+      Use <code>icon-border</code> and <code>pull-right</code> or <code>pull-left</code> for easy pull quotes or article graphics.
+     </p>
+   </div>	                             
+       
+	<p>Use a few of the new styles together ... lots of new possibilities.  	
+     <code>
+	  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-quote-left icon-4x pull-left icon-muted"</span><span class="nt">&gt;&lt;/i&gt;</span>
+     </code>
+    </p>   
+	   
+   <div class="bs-docs-example">
+	 <i class="icon-quote-left icon-4x pull-left icon-muted"></i>
+     Use a few of the new styles together, and you've got easy pull quotes or a great introductory article image. Or spinning icons for loading and refreshing content. Or fun big icons in multi-line buttons. You can combine all of them in any combination to get lots of new possibilities.
+   </div>                        
+		
+   <div class="bs-docs-example">							
+    <i class="icon-flag icon-4x pull-left icon-border"></i>
+     <p> Use a few of the new styles together, and you've got easy pull quotes or a great introductory article image. Or spinning icons for loading and refreshing content. Or fun big icons in multi-line buttons. You can combine all of them in any combination to get lots of new possibilities.</p>
+	</div>
+
+    
+	
+	 <h2>Animated Spinner</h2>
+
+	 <p>
+      Use the <code>icon-spin</code> class to get any icon to rotate. Works well with <code>icon-spinner</code> and
+      <code>icon-refresh</code>.
+    </p>
+	 
+    <div class="bs-docs-example">
+       
+        <i class="icon-spinner icon-spin icon-large"></i> Spinner icon when loading content...
+
+   </div>	
+	
+    <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-spinner icon-spin icon-large"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln"> Spinner icon when loading content...</span></li></ol></pre>
+	
+	<p class="alert alert-info">
+        <i class="icon-info-sign"></i> CSS3 animations aren't supported in IE7 - IE9.
+      </p>
+	  
+	  <h2>Custom CSS</h2>
+	  
+	  <p>Anything you can do with CSS font styles, you can do with Font Awesome.</p>
+
+	   <div class="bs-docs-example">
+        <span class="rating">
+          <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+        </span>
+      </div>
+	  
+	  <p>Complete Font icons documentation can be found here: <a href="http://fontawesome.io/3.2.1/examples/" target="_blank"> FontAweseome Documentation</a></p>
+	  
+	  
+  </section>
+		
+		
+	  
+    </div>
+</div>
+
+<!-- INCLUDE overall_footer_elements.html -->

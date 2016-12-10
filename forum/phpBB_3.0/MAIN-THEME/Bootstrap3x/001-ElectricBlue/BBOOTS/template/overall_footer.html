@@ -1,0 +1,91 @@
+<footer role="contentinfo"> <!-- Footer block -->
+		<div id="footerContent"> <!-- About us , links, twitter, recent posts layout -->
+			<div class="row">
+				<div class="col-md-3 col-sm-6 recent-row">
+					<div class="side-segment"><h3>{L_RECENT_TOPICS}</h3></div>
+                   <!-- INCLUDE recent_topics_body.html -->
+				</div>
+				
+				<div class="col-md-3 col-sm-6 recent-row">
+					<div class="side-segment"><h3>{L_TWITTER}</h3></div>
+				   <div id="example1"></div>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 recent-row">
+					<div class="side-segment"><h3>{L_FAVORITES}</h3></div>
+					<ul class="navList">
+						<li><a href="#"><i class="fa fa-home"></i> {L_HOME}</a></li>
+						<li><a href="#"><i class="fa fa-picture-o"></i> {L_GALLERY}</a></li>
+						<li><a href="{U_MEMBERLIST}"><i class="fa fa-group"></i> {L_MEMBERLIST}</a></li>
+						<li><a href="#"><i class="fa fa-comments"></i> {L_CHAT}</a></li>
+						<li><a href="#"><i class="fa fa-bar-chart-o"></i> {L_STATISTICS}</a></li>
+						<!-- IF not S_IS_BOT --><li><a href="{U_DELETE_COOKIES}"><i class="fa fa-trash-o"></i> {L_DELETE_COOKIES}</a></li><!-- ENDIF -->
+					</ul>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 recent-row">
+				   <div class="side-segment"><h3>{L_ABOUT}</h3></div>
+					<p>{L_ABOUT_PART_ONE}</p> 
+					<p>{L_ABOUT_PART_TWO}</p>
+				   <blockquote>
+                    <p><span>{L_BB}</span>{L_BOOTS}</p>
+                     <small><cite title="Source Title">{L_ABOUT_PART_THREE} <i class="fa fa-map-marker"></i></cite></small>
+                   </blockquote>
+				</div>
+				
+			</div>
+		</div> <!-- About us , links, twitter, recent posts layout -->
+		
+	<div class="row bottomLinks"> <!-- Credit, links and copyright block do not remove please -->
+	  <div class="col-md-12">
+		<div class="pull-left">
+		  <small>{L_POWERED} <a href="http://www.phpbb.com/" title="Forum Software &copy; phpBB&reg; Group" target="_blank"><i aria-hidden="true" class="icon-moon-forphp"></i></a> <i aria-hidden="true" class="icon-moon-bootstrap"></i> <i aria-hidden="true" class="icon-moon-html5"></i> <i aria-hidden="true" class="icon-moon-css3"></i> <i aria-hidden="true" class="icon-moon-forjq"></i> <i aria-hidden="true" class="icon-moon-less_c"></i> <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fsitesplat.com%2Fdemo%2FphpBB3%2Findex.php" title="Conform to W3C HTML5 Standard" target="_blank"> <i aria-hidden="true" class="icon-moon-w3c"></i></a> </small>
+		</div>
+		
+		<div class="pull-right">
+		  <small>{L_HANDCRAFTED}&nbsp;<i class="fa fa-heart rosso"></i> {L_AND} <i class="fa fa-coffee"></i> {L_BY} <a href="http://www.sitesplat.com/" title="SiteSplat.com" target="_blank">SiteSplat</a> &copy;SiteSplat 2013</small>
+		</div>
+	   </div> 
+	</div> <!-- Credit, links and copyright block do not remove please -->
+</footer>
+	
+	  </main>
+	</div><!-- page-body id in header -->
+  </div> <!-- padding_0_40 in header -->
+ </div> <!-- content-forum in header -->
+</div> <!-- wrap - corners container in header -->
+
+<a id="totop" class="topstyle" href="" onclick="return false;" style="display:none;"><i class="fa fa-chevron-up"></i></a>
+
+<div class="container">
+  <div class="copyright">
+	<small class="pull-left">
+		<!-- IF TRANSLATION_INFO -->{TRANSLATION_INFO}<!-- ENDIF -->
+		<!-- IF DEBUG_OUTPUT -->{DEBUG_OUTPUT}<!-- ENDIF -->
+		<!-- {L_BBOOTS_VERSION} -->
+	</small>
+	<small class="pull-right">
+		{S_TIMEZONE}
+	</small>
+  </div>
+</div>
+
+<div class="space10"></div> 
+
+<div> 
+	<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
+</div> 
+
+<!-- injected via a module or an include -->
+<script>
+    // some function that depends on bootstrap and jquery
+	head.ready(function () {
+	   $('.footable').footable();$.fn.tooltip&&$('[rel="tooltip"]').tooltip();$(".selectpicker").selectpicker();$(".selectpicker, .mchat-ttp").tooltip("disable");$(".btn-group [title]").tooltip({container:"body"});twitterFetcher.fetch("391407906655965184","example1",3,true,false);var totop=$("#totop");totop.click(function(){$("html, body").stop(true,true).animate({scrollTop:0},500);return false});$(window).scroll(function(){if($(this).scrollTop()>600){totop.fadeIn()}else{totop.fadeOut()}});$("button[data-loading-text]").click(function(){var e=$(this);e.button("loading");setTimeout(function(){e.button("reset")},3e3)});jQuery(function(e){e("a").tooltip({html:true,container:"body"})});
+       $('.listen_click').on('click',function(){$('.target-status').toggleClass('fa fa-arrow-down fa fa-arrow-up');});
+	   $('.listen_menu').on('click',function(){$(this).toggleClass('fa fa-align-justify fa fa-list');});
+	});
+</script>
+<!-- Google Analytics: change UA-XXXXXXXX-X to be your site's ID. -->
+
+</body>
+</html>
